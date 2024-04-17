@@ -81,6 +81,8 @@ print(f"Probability of a customer returning items: {probability_of_return:.2f}")
 ```
 
 
+## KDF and Histogram
+
 ```python
 # Create visualizations for the distribution of Session Duration across different customer ages using histograms and  
 # KDE plots. Interpret any patterns you observe.  
@@ -107,5 +109,63 @@ plt.xlabel('Session Duration (min)')
 plt.ylabel('Density')  
   
 # Display the plot  
+plt.show()
+```
+
+
+## Decision tree
+```python
+  
+# Decision Tree Model to predict 'Category'  
+  
+# Define the features and the target variable for classification  
+features = df.drop(columns=['CustomerID', 'Category'])  # drop non-numeric and target columns for features  
+target = df['Category']  # target variable  
+  
+# Split the dataset into training and testing sets for the decision tree  
+features_train, features_test, target_train, target_test = train_test_split(features, target, test_size=0.2, random_state=42)  
+  
+# Initialize and fit the decision tree classifier  
+decision_tree = DecisionTreeClassifier(random_state=42)  
+decision_tree.fit(features_train, target_train)  
+  
+# Predict the 'Category' for the testing set  
+target_pred = decision_tree.predict(features_test)  
+  
+# Calculate the accuracy of the model  
+dt_accuracy = accuracy_score(target_test, target_pred)  
+print(f"Decision Tree Model Accuracy: {dt_accuracy:.2f}")  
+  
+# Visualize the decision tree (for simplicity, only depth 3 is visualized)  
+plt.figure(figsize=(20,10))  
+tree.plot_tree(decision_tree, max_depth=3, feature_names=features.columns, class_names=decision_tree.classes_, filled=True)  
+plt.show()  
+  
+# Linear Regression to model the relationship between 'Annual Income' and 'Spending Score'  
+  
+# Define the independent variable (Annual Income) and dependent variable (Spending Score)  
+X = df['Annual Income (k$)'].values.reshape(-1,1)  # Independent variable  
+y = df['Spending Score (1-100)'].values  # Dependent variable  
+  
+# Split the dataset into training and testing sets for the linear regression  
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)  
+  
+# Initialize and fit the linear regression model  
+lin_reg = LinearRegression()  
+lin_reg.fit(X_train, y_train)  
+  
+# Predict the 'Spending Score' for the testing set  
+y_pred = lin_reg.predict(X_test)  
+  
+# Calculate the mean squared error of the model  
+mse = mean_squared_error(y_test, y_pred)  
+print(f"Linear Regression Model Mean Squared Error: {mse:.2f}")  
+  
+# Plotting the regression line against the data points  
+plt.scatter(X_test, y_test, color='blue')  
+plt.plot(X_test, y_pred, color='red', linewidth=2)  
+plt.title('Annual Income vs Spending Score')  
+plt.xlabel('Annual Income (k$)')  
+plt.ylabel('Spending Score (1-100)')  
 plt.show()
 ```
