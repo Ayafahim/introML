@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro to ML/Types of attribute.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -171,12 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0100d5d5bfa95d8",
+  "active": "5dfc048dd31fa692",
   "lastOpenFiles": [
-    "images/Pasted image 20240420185007.png",
+    "Intro to ML/Untitled.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Types of attribute.md",
-    "Intro to ML/Untitled.md",
+    "images/Pasted image 20240420185007.png",
     "Exams/S16.md",
     "Shopping/PCA.md",
     "images/Pasted image 20240420141911.png",
@@ -192,7 +192,6 @@
     "Shopping/Decision tree.md",
     "images/Figure_3.png",
     "images/Figure_2.png",
-    "images/Figure_1.png",
     "images",
     "Shopping"
   ]
