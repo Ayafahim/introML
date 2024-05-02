@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to ML/Machine Learning Tasks and Concepts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5dfc048dd31fa692",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Exams/S16.md",
                 "mode": "source",
                 "source": false
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +158,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5dfc048dd31fa692",
+  "active": "1526c7542c916554",
   "lastOpenFiles": [
-    "Intro to ML/Untitled.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
+    "1.0, 0.8], [0.8, 1.0.md",
+    "Exams/S16.md",
+    "Intro to ML/Untitled.md",
     "Intro to ML/Types of attribute.md",
     "images/Pasted image 20240420185007.png",
-    "Exams/S16.md",
     "Shopping/PCA.md",
     "images/Pasted image 20240420141911.png",
     "images/Pasted image 20240420141416.png",
