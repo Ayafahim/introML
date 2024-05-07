@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro to ML/Types of attribute.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -160,11 +160,11 @@
   },
   "active": "1526c7542c916554",
   "lastOpenFiles": [
+    "Intro to ML/Types of attribute.md",
     "Exams/S16.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "1.0, 0.8], [0.8, 1.0.md",
     "Intro to ML/Untitled.md",
-    "Intro to ML/Types of attribute.md",
     "images/Pasted image 20240420185007.png",
     "Shopping/PCA.md",
     "images/Pasted image 20240420141911.png",
