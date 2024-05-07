@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "92c3eb55465cf994",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exams/S16.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "7ec0493f9b4ac6ca",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d668db7d31f2f34",
+  "active": "92c3eb55465cf994",
   "lastOpenFiles": [
-    "Sections.md",
+    "Exams/F21.md",
     "Exams/S16.md",
+    "Sections.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Untitled.md",
