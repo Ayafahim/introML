@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#ANN",
+                "query": "tag:#HuntsAlgo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,8 +184,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0100d5d5bfa95d8",
+  "active": "92c3eb55465cf994",
   "lastOpenFiles": [
+    "Pasted image 20240508203148.png",
     "images/Pasted image 20240508185734.png",
     "images/Pasted image 20240508193237.png",
     "Exams/F21.md",
