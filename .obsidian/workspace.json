@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "fa95e42987a35294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Glossary & interperetations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "92c3eb55465cf994",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,8 +114,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/F21.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -184,14 +195,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92c3eb55465cf994",
+  "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
+    "Glossary & interperetations.md",
+    "Exams/S16.md",
+    "Exams/F21.md",
+    "Pasted image 20240508212515.png",
+    "Pasted image 20240508212230.png",
     "Pasted image 20240508203148.png",
     "images/Pasted image 20240508185734.png",
     "images/Pasted image 20240508193237.png",
-    "Exams/F21.md",
     "images/Pasted image 20240508185706.png",
-    "Exams/S16.md",
     "Sections.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
@@ -203,9 +217,6 @@
     "images/Pasted image 20240420141911.png",
     "images/Pasted image 20240420141416.png",
     "images/Pasted image 20240418210105.png",
-    "images/Pasted image 20240418203729.png",
-    "images/Pasted image 20240418173502.png",
-    "images/Screenshot 2024-04-18 at 17.30.27.png",
     "Shopping/Histogram and KDE plot.md",
     "Shopping/Code snippets.md",
     "Exams",
