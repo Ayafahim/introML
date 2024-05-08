@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/S16.md",
-                "mode": "preview",
+                "file": "Exams/F21.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#ANN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,12 +184,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92c3eb55465cf994",
+  "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
-    "Intro to ML/Machine Learning Tasks and Concepts.md",
-    "Exams/S16.md",
     "Exams/F21.md",
     "Sections.md",
+    "Exams/S16.md",
+    "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Untitled.md",
     "Intro to ML/Types of attribute.md",
