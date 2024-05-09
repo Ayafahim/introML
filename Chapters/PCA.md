@@ -111,23 +111,6 @@ To project data onto these new axes defined by the principal components:
 
 - **Projection**: Multiply your original data matrix by $V$. This operation transforms the data from the original feature space to the new space defined by the principal components.
 
-### Interpretation with an Example
-
-Suppose we perform SVD on a dataset and obtain the following $S$ matrix:
-
-$$
-S = \begin{bmatrix}
-5 & 0 & 0 \\
-0 & 3 & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-$$
-
-#### How to Interpret:
-- **First Singular Value (5)**: Indicates that the first principal component captures a large variance. Specifically, $5^2 = 25$ units of variance.
-- **Second Singular Value (3)**: The second principal component captures $3^2 = 9$ units of variance.
-- **Third Singular Value (1)**: The third principal component captures only $1^2 = 1$ unit of variance, significantly less than the first two components.
-
 ### Interpretation of Projections onto Principal Components
 
 
@@ -145,7 +128,7 @@ When interpreting projections:
   - If the coefficient of $x$ in $V$ is positive, a high value will contribute positively.
   - If the coefficient is negative, a high value will contribute negatively.
 
-### Table Overview
+### Table Overview #Gold
 
 | Condition  | Coefficient Sign | Contribution to PC |
 | ---------- | ---------------- | ------------------ |
@@ -210,6 +193,23 @@ $$
 Where:
 - $\sigma_1, \sigma_2, \sigma_3, \ldots, \sigma_p$ are the singular values.
 - $p$ is the number of singular values, which is typically equal to the number of dimensions of the input data or the number of principal components, depending on the context.
+### Interpretation with an Example
+
+Suppose we perform SVD on a dataset and obtain the following $S$ matrix:
+
+$$
+S = \begin{bmatrix}
+5 & 0 & 0 \\
+0 & 3 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+#### How to Interpret:
+- **First Singular Value (5)**: Indicates that the first principal component captures a large variance. Specifically, $5^2 = 25$ units of variance.
+- **Second Singular Value (3)**: The second principal component captures $3^2 = 9$ units of variance.
+- **Third Singular Value (1)**: The third principal component captures only $1^2 = 1$ unit of variance, significantly less than the first two components.
+
 
 ### Singular Values: Explained Variance
 
@@ -354,6 +354,80 @@ plt.axhline(y=0.72, color='r', linestyle='--', label='72% Explained Variance')
 plt.axhline(y=0.85, color='g', linestyle='--', label='85% Explained Variance')  
 plt.legend()  
 plt.show()
+```
+
+### Result
+```
+Explained Variance Ratios: [0.54869788 0.17389734 0.12720157 0.10127954 0.03688093 0.01204275]
+Cumulative Explained Variance: [0.54869788 0.72259521 0.84979678 0.95107632 0.98795725 1.        ]
+```
+
+If you want to add conditions to check the different components
+
+```python
+# Conditions based on the explained variance calculations
+condition_a = explained_variance_ratio[0] > 0.55
+condition_b = cumulative_explained_variance[2] > 0.90  # Index 2 because it's the third element (0-based index)
+condition_c = explained_variance_ratio[-1] > 0.01 #The last principal component
+condition_d = cumulative_explained_variance[4] > 0.95  # Index 4 for the fifth element
+
+# Print results
+print("Condition A (First PC > 55%):", condition_a)
+print("Condition B (First three PCs > 90%):", condition_b)
+print("Condition C (Last PC > 1%):", condition_c)
+print("Condition D (First five PCs > 95%):", condition_d)
+```
+
+OR use this
+
+```python
+import numpy as np  
+  
+# Singular values from the matrix S  
+singular_values = np.array([43.4, 23.39, 18.26, 9.34, 2.14])  
+  
+# Square the singular values to get the variances  
+variances = singular_values ** 2  
+  
+# Total variance is the sum of individual variances  
+total_variance = np.sum(variances)  
+  
+# Proportion of variance explained by each principal component  
+proportion_variance_explained = variances / total_variance  
+  
+# Compute cumulative variance explained by the first one, two, three, and four principal components  
+cumulative_variance_one = np.sum(proportion_variance_explained[:1])  
+cumulative_variance_three = np.sum(proportion_variance_explained[:3])  
+cumulative_variance_four = np.sum(proportion_variance_explained[:4])  
+  
+# Cumulative variance explained by the last four principal components (excluding the first one)  
+cumulative_variance_last_four = np.sum(proportion_variance_explained[1:])  
+  
+# Print the results  
+print("Proportion of variance explained by each component:", proportion_variance_explained)  
+print("Cumulative variance explained by one component:", cumulative_variance_one)  
+print("Cumulative variance explained by three components:", cumulative_variance_three)  
+print("Cumulative variance explained by four components:", cumulative_variance_four)  
+print("Cumulative variance explained by the last four components:", cumulative_variance_last_four)  
+  
+# Evaluate the statements given in the problem  
+A = cumulative_variance_last_four < 0.3  
+B = cumulative_variance_three > 0.9  
+C = cumulative_variance_four < 0.95  
+D = cumulative_variance_one > 0.715  
+  
+# Print the truth value of each statement  
+print("Statement A is", A)  
+print("Statement B is", B)  
+print("Statement C is", C)  
+print("Statement D is", D)  
+  
+# Identify the correct statement  
+statements = [A, B, C, D]  
+statement_labels = ['A', 'B', 'C', 'D']  
+for i, statement in enumerate(statements):  
+    if statement:  
+        print(f"The correct statement is: {statement_labels[i]}")
 ```
 
 

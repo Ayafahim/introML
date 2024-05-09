@@ -13,6 +13,9 @@
 | **Ratio**      | Numerical data with meaningful intervals and a true zero.                                         | Age: `10`, `20`, `30`                              |
 |                |                                                                                                   | Income: `$1000`, `$2000`, `$3000`                  |
 
+![[Pasted image 20240420185007.png]]
+
+
 ## Data Types
 
 - **Discrete Data**: Consists of distinct or separate values. Often counts or categories.
