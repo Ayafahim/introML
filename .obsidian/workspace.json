@@ -61,7 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Chapters/Data and Attribute Types.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8f473c805c689117",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chapters/PCA.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro to ML/Types of attribute.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro to ML/Types of attribute.md"
+                "file": "Chapters/Data and Attribute Types.md"
               }
             }
           }
@@ -209,6 +221,10 @@
   },
   "active": "565df8a7d3c9f14a",
   "lastOpenFiles": [
+    "Intro to ML/Types of attribute.md",
+    "Chapters/PCA.md",
+    "Chapters/Data and Attribute Types.md",
+    "Chapters",
     "Exams/S18.md",
     "Exams/F21.md",
     "Exams/S16.md",
@@ -224,7 +240,6 @@
     "images/Pasted image 20240508185706.png",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Untitled.md",
-    "Intro to ML/Types of attribute.md",
     "1.0, 0.8], [0.8, 1.0.md",
     "images/Pasted image 20240420185007.png",
     "Shopping/PCA.md",
