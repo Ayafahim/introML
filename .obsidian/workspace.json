@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/PCA Problems.md",
+                "file": "Chapters/PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/PCA Problems.md",
+                "file": "Chapters/PCA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/PCA Problems.md"
+                "file": "Chapters/PCA.md"
               }
             }
           }
@@ -195,15 +195,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92c3eb55465cf994",
+  "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Chapters/PCA.md",
     "Exams/PCA Problems.md",
+    "Chapters/PCA.md",
+    "Readme.md",
+    "Exams/F21.md",
     "Pasted image 20240509173716.png",
     "Pasted image 20240509173658.png",
     "Pasted image 20240509173452.png",
-    "Readme.md",
-    "Exams/F21.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/S16.md",
     "Chapters/Data and Attribute Types.md",
