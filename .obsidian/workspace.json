@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readme.md",
+                "file": "Glossary & interperetations.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/PCA.md"
+                "file": "Chapters/Summary Statistics and Measures of Similarity.md"
               }
             }
           }
@@ -197,34 +197,36 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Exams/PCA Problems.md",
-    "Chapters/PCA.md",
+    "Pasted image 20240509220802.png",
+    "images/Pasted image 20240509220444.png",
+    "images/Pasted image 20240509220602.png",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "images/Pasted image 20240509215907.png",
+    "images/Pasted image 20240509215804.png",
+    "Glossary & interperetations.md",
     "Readme.md",
+    "Intro to ML/Untitled.md",
+    "images/Pasted image 20240509215452.png",
+    "images/Pasted image 20240509215255.png",
+    "images/Pasted image 20240509213951.png",
+    "Chapters/PCA.md",
+    "Exams/PCA Problems.md",
     "Exams/F21.md",
-    "Pasted image 20240509173716.png",
-    "Pasted image 20240509173658.png",
-    "Pasted image 20240509173452.png",
+    "images/Pasted image 20240509173716.png",
+    "images/Pasted image 20240509173658.png",
+    "images/Pasted image 20240509173452.png",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/S16.md",
     "Chapters/Data and Attribute Types.md",
     "Intro to ML/Adaboost.md",
-    "Intro to ML/Untitled.md",
     "Intro to ML/Types of attribute.md",
     "Shopping/Code snippets.md",
     "Shopping/PCA.md",
     "Shopping/Histogram and KDE plot.md",
     "Shopping/Decision tree.md",
-    "Glossary & interperetations.md",
     "Sections.md",
     "Exams/S18.md",
-    "images/Pasted image 20240509145810.png",
     "Chapters",
-    "images/Pasted image 20240508221310.png",
-    "images/Pasted image 20240508212515.png",
-    "images/Pasted image 20240508212230.png",
-    "images/Pasted image 20240508203148.png",
-    "images/Pasted image 20240508185734.png",
-    "images/Pasted image 20240508193237.png",
     "1.0, 0.8], [0.8, 1.0.md",
     "Exams",
     "images",
