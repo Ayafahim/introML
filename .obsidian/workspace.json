@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Chapters/PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Chapters/PCA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md"
+                "file": "Chapters/PCA.md"
               }
             }
           }
@@ -219,14 +219,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "565df8a7d3c9f14a",
+  "active": "8f473c805c689117",
   "lastOpenFiles": [
-    "Intro to ML/Types of attribute.md",
-    "Chapters/PCA.md",
     "Chapters/Data and Attribute Types.md",
+    "Chapters/PCA.md",
+    "Exams/F21.md",
+    "images/Pasted image 20240509145810.png",
+    "Intro to ML/Types of attribute.md",
     "Chapters",
     "Exams/S18.md",
-    "Exams/F21.md",
     "Exams/S16.md",
     "Sections.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
@@ -244,7 +245,6 @@
     "images/Pasted image 20240420185007.png",
     "Shopping/PCA.md",
     "images/Pasted image 20240420141911.png",
-    "images/Pasted image 20240420141416.png",
     "Shopping/Histogram and KDE plot.md",
     "Shopping/Code snippets.md",
     "Exams",
