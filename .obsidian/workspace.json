@@ -61,13 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro to ML/Machine Learning Tasks and Concepts.md",
-                "mode": "preview",
+                "file": "Chapters/PCA.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/PCA Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/PCA Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/S16.md"
+                "file": "Exams/PCA Problems.md"
               }
             }
           }
@@ -194,15 +195,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d668db7d31f2f34",
+  "active": "92c3eb55465cf994",
   "lastOpenFiles": [
-    "Exams/F21.md",
-    "Exams/PCA Problems.md",
+    "Pasted image 20240509173716.png",
+    "Pasted image 20240509173658.png",
+    "Pasted image 20240509173452.png",
     "Chapters/PCA.md",
-    "Exams/S16.md",
+    "Exams/PCA Problems.md",
     "Readme.md",
-    "Chapters/Data and Attribute Types.md",
+    "Exams/F21.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
+    "Exams/S16.md",
+    "Chapters/Data and Attribute Types.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Untitled.md",
     "Intro to ML/Types of attribute.md",
@@ -223,8 +227,6 @@
     "images/Pasted image 20240508193237.png",
     "images/Pasted image 20240508185706.png",
     "1.0, 0.8], [0.8, 1.0.md",
-    "images/Pasted image 20240420185007.png",
-    "images/Pasted image 20240420141911.png",
     "Exams",
     "images",
     "Shopping"
