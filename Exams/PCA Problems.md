@@ -58,7 +58,7 @@ for i, statement in enumerate(statements):
         print(f"The correct statement is: {statement_labels[i]}")
 ```
 
-
+---
 ## F21, Q4) Consider again the PCA analysis for the Olive Oil dataset, in particular the SVD decomposition of $\mathbf{\tilde{X}}$ in Equation (1). Which one of the following statements is true?
 
 A. An observation with a low value of $x_1$ (palmitic), a low value of $x_2$ (palmitoleic), a high value of $x_4$ (oleic), and a low value of $x_5$ (linoleic) will typically have a negative value of the projection onto principal component number 1. (Correct Answer)
@@ -104,7 +104,7 @@ If the negative contributions from the "low" values of \( x1 \), \( x2 \), and \
 
 This approach lets you use the properties of the \( V \) matrix effectively to predict how changes in the original variables influence their representation in the transformed feature space created by PCA.
 
-
+---
 ## F21, Q5) All the objects from four regions of origin are projected onto the first two principal components and visualised as a scatter plot in Figure 4. Which one of the following statements is true?
 
 ![[Pasted image 20240508203148.png]]
@@ -125,8 +125,7 @@ D. There exists a logistic regression classifier that takes all eight attributes
 - **Answer B** is incorrect, since a tree with two leafs (splitting e.g. around −1 in the projection onto the first principal component) will be able to perfectly classify the objects.
 - **Answer C** is incorrect, since a classification tree is always able to obtain an error of 0 when there is no identical training object in the two classes (unless the tree complexity is limited).
 - **Answer D** is correct, since the two classes South Apulia (y = 3) and Umbria (y = 9) are linearly separable in the PCA plot. Furthermore, if points are linearly separable in the projection onto the first two principal components, then they are also linearly separable in the original attribute space.
-
-
+---
 ## S16, Q3) Plot of each observation plotted onto the two first principal directions given in Equation...Which of the following statements best describes the development of  the measurements? 
 
 Full question:
@@ -169,6 +168,7 @@ print(result_vector)
 # We see the temperature goes up, the humidity drops and the light goes up, therefore option A is correct.
 ```
 
+---
 ## S18, Q2) In Figure 2 is given the pct. of variance explained by retaining the first k principal components as a function of k. Which one of the four curves corresponds to the correct curve of variance explained as function of the number of principal components retained? 
 
 ![[Pasted image 20240509145810.png]]
@@ -302,8 +302,7 @@ Explained Variance Ratios: [0.54869788 0.17389734 0.12720157 0.10127954 0.036880
 Cumulative Explained Variance: [0.54869788 0.72259521 0.84979678 0.95107632 0.98795725 1.        ]
 ```
 
-
-
+---
 ## S18, Q3) According to the extracted PCA directions given by the matrix V in the above what will be the coordinate of the standardized observation $x^* = [-0.1, 0.2, 0.1, -0.3, 1, 0.5]$ when projected onto the first two principal components?
 
 Given an observation vector $x^*$ and a matrix $V$ containing principal component directions, the projection of $x^*$ onto the principal components involves calculating the dot products of $x^*$ with each of the principal component vectors.
@@ -368,7 +367,7 @@ print(f"Projection Coordinates: ({p1:.3f}, {p2:.3f})")
 ### Result
 `Projection Coordinates: (0.652, -0.512)`
 
-
+--- 
 ## F16, Q3) The data projected onto the two first principal components (as defined in Question 2) is given in Figure 2 where each class is indicated using different markers and colors. which one of the following statements pertaining to the PCA is correct?
 
 ![[Pasted image 20240509173452.png]]
@@ -404,5 +403,87 @@ From the analysis, **Statement B** is correct as it aligns with the interpretati
 
 ### Plot Interpretation
 Looking at the scatter plot in Figure 2, we see the data clustered by type (Kama, Rosa, Canadian) and spread along the axes of PCA1 and PCA2. This visualization helps confirm that PCA1 and PCA2 capture distinct variances which possibly correlate with physical seed characteristics like size and shape, consistent with the discussions above.
+
+--- 
+
+## F17, Q2) What is the value of the fourth singular value $\sigma_4$?
+
+#### Full question:
+A Principal Component Analysis (PCA) is carried out on the standardized attributes $x_1$-$x_4$, forming the standardized matrix $\tilde{X}$. The squared Frobenius norm of the standardized matrix is given by $\|\tilde{X}\|_F^2 = 212$. A singular value decomposition is applied to the matrix $\tilde{X}$ and we find that the first three singular values are $\sigma_1 = 11.1$, $\sigma_2 = 7.2$, $\sigma_3 = 5.2$. What is the value of the fourth singular value $\sigma_4$?
+
+### Solution:
+
+The squared Frobenius norm of a matrix $\tilde{X}$, denoted $( \|\tilde{X}\|_F^2)$, equals the sum of the squares of all the singular values of $\tilde{X}$. Mathematically, this relationship is expressed as:
+
+$$
+\|\tilde{X}\|_F^2 = \sigma_1^2 + \sigma_2^2 + \sigma_3^2 + \sigma_4^2 + \ldots
+$$
+
+Given the squared Frobenius norm $( \|\tilde{X}\|_F^2 = 212 )$ and the known first three singular values $( \sigma_1 = 11.1)$, $( \sigma_2 = 7.2)$, $(\sigma_3 = 5.2 )$, you can solve for $(\sigma_4)$ using the equation:
+
+$$
+\sigma_1^2 + \sigma_2^2 + \sigma_3^2 + \sigma_4^2 = 212
+$$
+
+## Computation of the Fourth Singular Value
+
+Given:
+- Frobenius norm squared: $||\tilde{X}||_F^2 = 212$
+- Singular values: $\sigma_1 = 11.1$, $\sigma_2 = 7.2$, $\sigma_3 = 5.2$
+
+### Calculation Steps:
+
+1. Calculate the squares of the known singular values:
+   - $\sigma_1^2 = 11.1^2 = 123.21$
+   - $\sigma_2^2 = 7.2^2 = 51.84$
+   - $\sigma_3^2 = 5.2^2 = 27.04$
+
+2. Sum these values:
+   - $123.21 + 51.84 + 27.04 = 202.09$
+
+3. Solve for $\sigma_4^2$ using the Frobenius norm:
+   - $\sigma_4^2 = 212 - 202.09 = 9.91$
+
+4. Calculate $\sigma_4$:
+   - $\sigma_4 = \sqrt{9.91} \approx 3.1$
+
+### Result:
+
+$$
+\sigma_4 = 3.1
+$$
+
+This value corresponds to option C. The fourth singular value $\sigma_4$ is approximately 3.1.
+
+
+### Script
+
+```python
+import numpy as np
+
+# Given data
+frobenius_norm_squared = 212
+singular_values = np.array([11.1, 7.2, 5.2])
+
+# Step 1: Calculate the squared values of the known singular values
+squared_singular_values = singular_values**2
+
+# Step 2: Sum the squared singular values
+sum_squared_singular_values = np.sum(squared_singular_values)
+
+# Step 3: Calculate the squared value of the fourth singular value
+sigma4_squared = frobenius_norm_squared - sum_squared_singular_values
+
+# Step 4: Calculate the fourth singular value
+sigma4 = np.sqrt(sigma4_squared)
+
+# Print the results
+print("Squared Singular Values:", squared_singular_values)
+print("Sum of Squared Singular Values:", sum_squared_singular_values)
+print("Squared Value of Fourth Singular Value:", sigma4_squared)
+print("Fourth Singular Value:", sigma4)
+```
+
+---
 
 

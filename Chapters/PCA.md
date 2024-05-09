@@ -504,3 +504,63 @@ print(f"Projection Coordinates: ({p1:.3f}, {p2:.3f})")
 `Projection Coordinates: (0.652, -0.512)`
 
 ---
+## Understanding the Frobenius Norm and Singular Value Decomposition (SVD)
+
+### Frobenius Norm
+
+The Frobenius norm of a matrix, denoted as $||\tilde{X}||_F$, is a measure of the "size" or "magnitude" of the matrix. It is defined as the square root of the sum of the absolute squares of its elements. For a matrix with singular values $\sigma_1, \sigma_2, ..., \sigma_n$, the squared Frobenius norm can be expressed as:
+
+$$
+||\tilde{X}||_F^2 = \sigma_1^2 + \sigma_2^2 + \sigma_3^2 + \ldots + \sigma_n^2
+$$
+
+This means that the squared Frobenius norm is the sum of the squares of all its singular values.
+
+### Singular Value Decomposition (SVD)
+
+SVD is a method of decomposing a matrix into three other matrices, such that:
+
+$$
+\tilde{X} = U \Sigma V^T
+$$
+
+- $U$ and $V$ are orthogonal matrices (where $U^TU = I$ and $V^TV = I$).
+- $\Sigma$ is a diagonal matrix containing the singular values of $\tilde{X}$.
+
+SVD is particularly useful in many applications, including PCA, because it helps in identifying the directions of maximum variance in data.
+
+### Simple Example
+
+Consider a $2 \times 2$ matrix:
+
+$$
+A = \begin{bmatrix}
+3 & 4 \\
+5 & 2
+\end{bmatrix}
+$$
+
+After applying SVD, we might find:
+
+$$
+U = \begin{bmatrix}
+0.6 & -0.8 \\
+0.8 & 0.6
+\end{bmatrix}, \quad
+\Sigma = \begin{bmatrix}
+7 & 0 \\
+0 & 2
+\end{bmatrix}, \quad
+V^T = \begin{bmatrix}
+0.8 & 0.6 \\
+-0.6 & 0.8
+\end{bmatrix}
+$$
+
+Where the diagonal elements of $\Sigma$ are the singular values, indicating the scales of the new axes found by SVD.
+
+
+
+
+
+
