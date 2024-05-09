@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/S18.md",
+                "file": "Intro to ML/Types of attribute.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/S18.md",
+                "file": "Intro to ML/Types of attribute.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/S18.md",
+                "file": "Intro to ML/Types of attribute.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/S18.md"
+                "file": "Intro to ML/Types of attribute.md"
               }
             }
           }
@@ -209,8 +209,8 @@
   },
   "active": "565df8a7d3c9f14a",
   "lastOpenFiles": [
-    "Exams/F21.md",
     "Exams/S18.md",
+    "Exams/F21.md",
     "Exams/S16.md",
     "Sections.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
