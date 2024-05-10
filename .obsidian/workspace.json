@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/Summary Statistics and Measures of Similarity.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/Summary Statistics and Measures of Similarity.md"
+                "file": "Chapters/Data and Attribute Types.md"
               }
             }
           }
@@ -197,10 +197,14 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/8) Classification & regression.md",
+    "Pasted image 20240510142450.png",
+    "Pasted image 20240510142440.png",
+    "Pasted image 20240510142357.png",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
     "Pasted image 20240509220802.png",
     "images/Pasted image 20240509220444.png",
     "images/Pasted image 20240509220602.png",
-    "Chapters/Summary Statistics and Measures of Similarity.md",
     "images/Pasted image 20240509215907.png",
     "images/Pasted image 20240509215804.png",
     "Glossary & interperetations.md",
@@ -208,13 +212,9 @@
     "Intro to ML/Untitled.md",
     "images/Pasted image 20240509215452.png",
     "images/Pasted image 20240509215255.png",
-    "images/Pasted image 20240509213951.png",
     "Chapters/PCA.md",
     "Exams/PCA Problems.md",
     "Exams/F21.md",
-    "images/Pasted image 20240509173716.png",
-    "images/Pasted image 20240509173658.png",
-    "images/Pasted image 20240509173452.png",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/S16.md",
     "Chapters/Data and Attribute Types.md",
