@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md"
+                "file": "Chapters/8) Classification & regression.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/Data and Attribute Types.md",
     "Chapters/8) Classification & regression.md",
     "Pasted image 20240510142450.png",
     "Pasted image 20240510142440.png",
@@ -217,7 +218,6 @@
     "Exams/F21.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/S16.md",
-    "Chapters/Data and Attribute Types.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Types of attribute.md",
     "Shopping/Code snippets.md",
