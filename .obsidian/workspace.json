@@ -61,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/PCA Problems.md",
-                "mode": "preview",
+                "file": "Chapters/8) Classification & regression.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -195,19 +195,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92c3eb55465cf994",
+  "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "Chapters/9) Decision Trees.md",
+    "Chapters/Data and Attribute Types.md",
     "Chapters/PCA.md",
+    "Exams/PCA Problems.md",
+    "Chapters/8) Classification & regression.md",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/F21.md",
     "Shopping/Code snippets.md",
     "Exams/S16.md",
-    "Chapters/9) Decision Trees.md",
-    "Chapters/8) Classification & regression.md",
-    "Exams/PCA Problems.md",
     "Exams/S18.md",
     "Readme.md",
-    "Chapters/Data and Attribute Types.md",
     "Pasted image 20240510142450.png",
     "Pasted image 20240510142440.png",
     "Pasted image 20240510142357.png",

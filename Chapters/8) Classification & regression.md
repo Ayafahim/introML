@@ -185,3 +185,4 @@ From this matrix, you can compute various performance metrics such as accuracy, 
   $$
 
 These metrics derived from the confusion matrix help in understanding the strengths and weaknesses of the classification model, particularly in how different types of errors are being made.
+
