@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/9) Decision Trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/9) Decision Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/9) Decision Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/8) Classification & regression.md"
+                "file": "Chapters/9) Decision Trees.md"
               }
             }
           }
@@ -197,8 +197,9 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Chapters/Data and Attribute Types.md",
     "Chapters/8) Classification & regression.md",
+    "Chapters/9) Decision Trees.md",
+    "Chapters/Data and Attribute Types.md",
     "Pasted image 20240510142450.png",
     "Pasted image 20240510142440.png",
     "Pasted image 20240510142357.png",
