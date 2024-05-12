@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,8 +114,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Chapters/8) Classification & regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/F21.md"
+                "file": "Chapters/8) Classification & regression.md"
               }
             }
           }
@@ -198,13 +197,13 @@
   },
   "active": "92c3eb55465cf994",
   "lastOpenFiles": [
-    "Shopping/Code snippets.md",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "Chapters/PCA.md",
     "Exams/F21.md",
+    "Shopping/Code snippets.md",
     "Exams/S16.md",
     "Chapters/9) Decision Trees.md",
-    "Chapters/PCA.md",
     "Chapters/8) Classification & regression.md",
-    "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/PCA Problems.md",
     "Exams/S18.md",
     "Readme.md",
