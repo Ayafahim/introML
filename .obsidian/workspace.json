@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/PCA Problems.md",
-                "mode": "source",
+                "file": "Exams/S16.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -61,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/9) Decision Trees.md",
-                "mode": "source",
+                "file": "Exams/PCA Problems.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/9) Decision Trees.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/9) Decision Trees.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/9) Decision Trees.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -195,28 +195,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7ec0493f9b4ac6ca",
+  "active": "92c3eb55465cf994",
   "lastOpenFiles": [
-    "Chapters/8) Classification & regression.md",
-    "Chapters/9) Decision Trees.md",
+    "Exams/PCA Problems.md",
+    "Exams/S18.md",
+    "Exams/F21.md",
+    "Chapters/PCA.md",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "Readme.md",
     "Chapters/Data and Attribute Types.md",
+    "Chapters/9) Decision Trees.md",
+    "Chapters/8) Classification & regression.md",
     "Pasted image 20240510142450.png",
     "Pasted image 20240510142440.png",
     "Pasted image 20240510142357.png",
-    "Chapters/Summary Statistics and Measures of Similarity.md",
     "Pasted image 20240509220802.png",
     "images/Pasted image 20240509220444.png",
     "images/Pasted image 20240509220602.png",
     "images/Pasted image 20240509215907.png",
     "images/Pasted image 20240509215804.png",
     "Glossary & interperetations.md",
-    "Readme.md",
     "Intro to ML/Untitled.md",
     "images/Pasted image 20240509215452.png",
     "images/Pasted image 20240509215255.png",
-    "Chapters/PCA.md",
-    "Exams/PCA Problems.md",
-    "Exams/F21.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/S16.md",
     "Intro to ML/Adaboost.md",
@@ -226,7 +227,6 @@
     "Shopping/Histogram and KDE plot.md",
     "Shopping/Decision tree.md",
     "Sections.md",
-    "Exams/S18.md",
     "Chapters",
     "1.0, 0.8], [0.8, 1.0.md",
     "Exams",
