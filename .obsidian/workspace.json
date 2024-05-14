@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/PCA.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/PCA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/8) Classification & regression.md"
+                "file": "Chapters/PCA.md"
               }
             }
           }
@@ -197,11 +197,11 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/PCA Problems.md",
+    "Chapters/8) Classification & regression.md",
     "Chapters/9) Decision Trees.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/PCA.md",
-    "Exams/PCA Problems.md",
-    "Chapters/8) Classification & regression.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/F21.md",
     "Shopping/Code snippets.md",
