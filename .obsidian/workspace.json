@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Binary tables.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -197,11 +197,18 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/9) Decision Trees.md",
+    "Exams/S16.md",
+    "Exams/ROC.md",
+    "Pasted image 20240516011012.png",
+    "Exams/Binary tables.md",
+    "Exams/F21.md",
+    "Exams/Jaccard Similarity.md",
+    "Pasted image 20240516004236.png",
     "Pasted image 20240516002858.png",
     "Pasted image 20240516001740.png",
     "Pasted image 20240516001614.png",
     "Exams/Naive Bayes Classifier.md",
-    "Exams/Binary tables.md",
     "Pasted image 20240515231403.png",
     "Pasted image 20240515231345.png",
     "Exams/K-means algorithm.md",
@@ -210,29 +217,21 @@
     "Exams/ANN.md",
     "Pasted image 20240515214200.png",
     "Exams/Hunts Algorithm.md",
-    "Exams/Jaccard Similarity.md",
     "Exams/PCA Problems.md",
     "Glossary & interperetations.md",
     "images/Pasted image 20240515180300.png",
     "Chapters/PCA.md",
     "Chapters/8) Classification & regression.md",
-    "images/Pasted image 20240515173540.png",
-    "Chapters/9) Decision Trees.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
-    "Exams/F21.md",
     "Shopping/Code snippets.md",
-    "Exams/S16.md",
     "Exams/S18.md",
     "Readme.md",
-    "images/Pasted image 20240510142450.png",
-    "images/Pasted image 20240510142440.png",
     "Intro to ML/Untitled.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Types of attribute.md",
     "Shopping/PCA.md",
-    "Shopping/Histogram and KDE plot.md",
     "Chapters",
     "Exams",
     "images",
