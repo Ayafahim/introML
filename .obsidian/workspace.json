@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Hunts Algorithm.md",
+                "file": "Exams/Multinominal Regression.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Hunts Algorithm.md",
+                "file": "Exams/Multinominal Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Hunts Algorithm.md",
+                "file": "Exams/Multinominal Regression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Hunts Algorithm.md"
+                "file": "Exams/Multinominal Regression.md"
               }
             }
           }
@@ -197,13 +197,17 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Pasted image 20240515180300.png",
-    "Exams/Jaccard Similarity.md",
+    "Exams/ANN.md",
+    "Exams/Multinominal Regression.md",
+    "Pasted image 20240515214200.png",
     "Exams/Hunts Algorithm.md",
+    "Exams/Jaccard Similarity.md",
+    "Exams/PCA Problems.md",
+    "Glossary & interperetations.md",
+    "images/Pasted image 20240515180300.png",
     "Chapters/PCA.md",
     "Chapters/8) Classification & regression.md",
-    "Pasted image 20240515173540.png",
-    "Exams/PCA Problems.md",
+    "images/Pasted image 20240515173540.png",
     "Chapters/9) Decision Trees.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
@@ -212,17 +216,14 @@
     "Exams/S16.md",
     "Exams/S18.md",
     "Readme.md",
-    "Pasted image 20240510142450.png",
-    "Pasted image 20240510142440.png",
-    "Pasted image 20240510142357.png",
-    "Pasted image 20240509220802.png",
+    "images/Pasted image 20240510142450.png",
+    "images/Pasted image 20240510142440.png",
+    "images/Pasted image 20240510142357.png",
+    "images/Pasted image 20240509220802.png",
     "images/Pasted image 20240509220444.png",
     "images/Pasted image 20240509220602.png",
     "images/Pasted image 20240509215907.png",
-    "images/Pasted image 20240509215804.png",
-    "Glossary & interperetations.md",
     "Intro to ML/Untitled.md",
-    "images/Pasted image 20240509215452.png",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Types of attribute.md",
