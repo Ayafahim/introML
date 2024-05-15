@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Naive Bayes Classifier.md",
+                "file": "Exams/Binary tables.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Naive Bayes Classifier.md",
+                "file": "Exams/Binary tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Naive Bayes Classifier.md",
+                "file": "Exams/Binary tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Naive Bayes Classifier.md"
+                "file": "Exams/Binary tables.md"
               }
             }
           }
@@ -197,10 +197,14 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Pasted image 20240516002858.png",
+    "Pasted image 20240516001740.png",
+    "Pasted image 20240516001614.png",
+    "Exams/Naive Bayes Classifier.md",
+    "Exams/Binary tables.md",
     "Pasted image 20240515231403.png",
     "Pasted image 20240515231345.png",
     "Exams/K-means algorithm.md",
-    "Exams/Naive Bayes Classifier.md",
     "Pasted image 20240515225447.png",
     "Exams/Multinominal Regression.md",
     "Exams/ANN.md",
@@ -223,16 +227,12 @@
     "Readme.md",
     "images/Pasted image 20240510142450.png",
     "images/Pasted image 20240510142440.png",
-    "images/Pasted image 20240510142357.png",
-    "images/Pasted image 20240509220802.png",
-    "images/Pasted image 20240509220444.png",
     "Intro to ML/Untitled.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Types of attribute.md",
     "Shopping/PCA.md",
     "Shopping/Histogram and KDE plot.md",
-    "Shopping/Decision tree.md",
     "Chapters",
     "Exams",
     "images",

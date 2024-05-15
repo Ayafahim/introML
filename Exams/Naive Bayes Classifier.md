@@ -18,6 +18,16 @@ So fx:
 
 
 $$
-= \frac{\frac{2 \times 2 \times 2}{1 \times 2 \times 5}}{\frac{1 \times 1 \times 1}{1 \times 2 \times 5} + \frac{2 \times 2 \times 3}{3 \times 3 \times 10} + \frac{4 \times 3 \times 1}{5 \times 5 \times 2}}
+= \frac{\frac{2 \times 2 \times 2 \times 3}{3 \times 3 \times 3 \times 10}}{\frac{2 \times 1 \times 2 \times 2}{2 \times 2 \times 2 \times 10} + \frac{2 \times 2 \times 2\times 3}{3 \times 3\times 3 \times 10} + \frac{4 \times 3 \times 1\times 5}{5 \times 5\times 5 \times 10}} =  \frac{533}{200}
 $$
+ 
+${p(f_2 = 0 \mid y = 2)} = 2/3$ times if we look at the table 
+${p(f_4 = 1 \mid y = 2)} = 2/3$ times if we look at the table 
+${(y = 2)} = 3/10$ because there are 3 classes where y = 2
 
+This is done for all of them.
+
+calculated in maple
+```maple
+2/3*2/3*2/3*3/10/(2/2*1/2*2/2*2/10 + 2/3*2/3*2/3*3/10 + 4/5*3/5*1/5*5/10)
+```
