@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Naive Bayes Classifier.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Naive Bayes Classifier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Naive Bayes Classifier.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Multinominal Regression.md"
+                "file": "Exams/Naive Bayes Classifier.md"
               }
             }
           }
@@ -197,8 +197,13 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Exams/ANN.md",
+    "Pasted image 20240515231403.png",
+    "Pasted image 20240515231345.png",
+    "Exams/K-means algorithm.md",
+    "Exams/Naive Bayes Classifier.md",
+    "Pasted image 20240515225447.png",
     "Exams/Multinominal Regression.md",
+    "Exams/ANN.md",
     "Pasted image 20240515214200.png",
     "Exams/Hunts Algorithm.md",
     "Exams/Jaccard Similarity.md",
@@ -221,8 +226,6 @@
     "images/Pasted image 20240510142357.png",
     "images/Pasted image 20240509220802.png",
     "images/Pasted image 20240509220444.png",
-    "images/Pasted image 20240509220602.png",
-    "images/Pasted image 20240509215907.png",
     "Intro to ML/Untitled.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
@@ -230,9 +233,7 @@
     "Shopping/PCA.md",
     "Shopping/Histogram and KDE plot.md",
     "Shopping/Decision tree.md",
-    "Sections.md",
     "Chapters",
-    "1.0, 0.8], [0.8, 1.0.md",
     "Exams",
     "images",
     "Shopping"
