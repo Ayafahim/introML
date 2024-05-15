@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/8) Classification & regression.md",
+                "file": "Chapters/PCA.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Hunts Algorithm.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Hunts Algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Hunts Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Jaccard Similarity.md"
+                "file": "Exams/Hunts Algorithm.md"
               }
             }
           }
@@ -197,11 +197,13 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Pasted image 20240515173540.png",
-    "Chapters/PCA.md",
+    "Pasted image 20240515180300.png",
     "Exams/Jaccard Similarity.md",
-    "Exams/PCA Problems.md",
+    "Exams/Hunts Algorithm.md",
+    "Chapters/PCA.md",
     "Chapters/8) Classification & regression.md",
+    "Pasted image 20240515173540.png",
+    "Exams/PCA Problems.md",
     "Chapters/9) Decision Trees.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
@@ -221,7 +223,6 @@
     "Glossary & interperetations.md",
     "Intro to ML/Untitled.md",
     "images/Pasted image 20240509215452.png",
-    "images/Pasted image 20240509215255.png",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Intro to ML/Adaboost.md",
     "Intro to ML/Types of attribute.md",
