@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Jaccard Similarity.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Jaccard Similarity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Jaccard Similarity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/PCA.md"
+                "file": "Exams/Jaccard Similarity.md"
               }
             }
           }
@@ -197,11 +197,13 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Pasted image 20240515173540.png",
+    "Chapters/PCA.md",
+    "Exams/Jaccard Similarity.md",
     "Exams/PCA Problems.md",
     "Chapters/8) Classification & regression.md",
     "Chapters/9) Decision Trees.md",
     "Chapters/Data and Attribute Types.md",
-    "Chapters/PCA.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/F21.md",
     "Shopping/Code snippets.md",
