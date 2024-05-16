@@ -62,7 +62,7 @@
               "type": "markdown",
               "state": {
                 "file": "Exams/S16.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ann ",
+                "query": "gau",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,12 +197,12 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Chapters/9) Decision Trees.md",
+    "Exams/F21.md",
     "Exams/S16.md",
+    "Chapters/9) Decision Trees.md",
     "Exams/ROC.md",
     "Pasted image 20240516011012.png",
     "Exams/Binary tables.md",
-    "Exams/F21.md",
     "Exams/Jaccard Similarity.md",
     "Pasted image 20240516004236.png",
     "Pasted image 20240516002858.png",
