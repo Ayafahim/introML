@@ -5,7 +5,8 @@
 
 
 ```python
-import itertools  
+import itertools 
+import numpy as np
   
   
 def find_extended_itemsets_with_support(table, num_items, min_support_ratio):  
