@@ -149,3 +149,98 @@ print("Simple Matching Coefficient between o2 and o4:", smc_o2_o4)
 # print("Statement C", statement_c)  
 # print("Statement D", statement_d)
 ```
+
+---
+## F23, Q8) What is the minimum and maximum achievable value of the Simple Matching Coefficient (SMC) between o6 from Table 2 and the new observation o11? #smc 
+
+![[Pasted image 20240517235352.png]]
+
+
+Consider a new, binarized observation $( \mathbf{o}_{11} = [0, ?, ?, 1]^T )$, which contains two unknown values each indicated with a ´?´. What is the minimum and maximum achievable value of the Simple Matching Coefficient (SMC) between $( \mathbf{o}_{6})$ from Table 2 and the new observation $( \mathbf{o}_{11} )$?
+
+A. 
+$$
+\text{min SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.50 \\
+\text{max SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 1.0
+$$
+
+B. 
+$$
+\text{min SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.75 \\
+\text{max SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.9
+$$
+
+C. 
+$$
+\text{min SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.25 \\
+\text{max SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 1.0
+$$
+
+D. 
+$$
+\text{min SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.25 \\
+\text{max SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.9
+$$
+
+E. Don’t know.
+
+#### Explanation:
+To solve this question, let's break down the steps needed to calculate the Simple Matching Coefficient (SMC) and determine the minimum and maximum values it can take.
+
+1. **Simple Matching Coefficient (SMC):**
+   - The SMC between two binary vectors is defined as the number of matching components (both 0s and 1s) divided by the total number of components.
+   - Mathematically:
+     $$
+     \text{SMC} = \frac{(a + d)}{(a + b + c + d)}
+     $$
+     where:
+     - \( a \) is the number of times both components are 0.
+     - \( d \) is the number of times both components are 1.
+     - \( b \) is the number of times the first component is 0 and the second is 1.
+     - \( c \) is the number of times the first component is 1 and the second is 0.
+
+2. **Given Information:**
+   - Observation $( \mathbf{o}_{6})$ from Table 2: $( [0, 1, 0, 1] )$
+   - New observation $( \mathbf{o}_{11} = [0, ?, ?, 1]^T)$ with unknown values represented by ?.
+
+3. **Match with Known Components:**
+   - The 1st component of $( \mathbf{o}_{6})$ and $( \mathbf{o}_{11})$ both are 0 (matches).
+   - The 4th component of $( \mathbf{o}_{6})$ and $( \mathbf{o}_{11})$ both are 1 (matches).
+
+4. **Determine Possible Values for Unknown Components:**
+   - Let the unknown components be $( \mathbf{o}_{11,2})$ and $( \mathbf{o}_{11,3})$.
+
+5. **Calculate Minimum and Maximum SMC:**
+   - **Maximum SMC:**
+     - To maximize SMC, we want the unknown components to match the corresponding components of $( \mathbf{o}_{6})$.
+     - So, set $( \mathbf{o}_{11,2} = 1)$ and $( \mathbf{o}_{11,3} = 0)$.
+     - Matching components: 4 (all components match).
+     - SMC = $( \frac{4}{4} = 1.0)$.
+
+   - **Minimum SMC:**
+     - To minimize SMC, we want the unknown components to not match the corresponding components of $( \mathbf{o}_{6})$.
+     - So, set $( \mathbf{o}_{11,2} = 0)$ and $( \mathbf{o}_{11,3} = 1 )$.
+     - Matching components: 2 (1st and 4th components match).
+     - Non-matching components: 2 (2nd and 3rd components do not match).
+     - SMC = $( \frac{2}{4} = 0.5)$.
+
+### Conclusion:
+The correct answer is:
+A. 
+$$
+\text{min SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 0.50 \\
+\text{max SMC}(\mathbf{o}_{6}, \mathbf{o}_{11}) = 1.0
+$$
+
+### Summary Notes:
+1. **Simple Matching Coefficient (SMC):**
+   - Measures similarity between two binary vectors.
+   - Formula: $( \text{SMC} = \frac{(a + d)}{(a + b + c + d)})$.
+
+2. **Calculation Strategy:**
+   - Identify matching and non-matching components.
+   - Consider both maximum and minimum scenarios for unknown components.
+
+3. **Key Steps:**
+   - Set unknown components to maximize and minimize matches.
+   - Compute SMC for both scenarios to find the range.
