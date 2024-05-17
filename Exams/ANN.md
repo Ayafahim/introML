@@ -192,3 +192,8 @@ plot_ann_outputs(weights, x1_range, x2_range)
 ```
 
 
+---
+
+## F23,Q10) Which one of the following statements regarding artificial neural networks is correct? #Theory
+
+![[Pasted image 20240518003857.png]]

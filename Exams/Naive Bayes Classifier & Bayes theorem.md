@@ -52,3 +52,28 @@ $$
 p(y = 1 \mid x_2 = 0, x_3 = 1) = \frac{0.17 \times 0.268}{0.28 \times 0.366 + 0.17\times 0.268 + 0.33 \times 0.365} = 0.17
 $$
 
+---
+## F31, Q11) Consider the Table 4 that shows the class conditional joint probability for the attributes $x_1, x_3$ of the CCPP dataset after binarization, while the prior probabilities for the two classes are $p(y =  Low) = 0.53$ and $p(y = High) = 0.47$.  What is the probability the energy production to be High when $x_1 = 0$?
+
+![[Pasted image 20240518004150.png]]
+
+### Solution 
+You just have to first take $p(x_1 = 0 | y = high)$  so this means for both $p(x_1 = 0 | x_3 = 0)$ and $p(x_1 = 0 | x_3 = 1)$
+
+so:
+$$
+p(x_1 = 0 | y = high) = p(x_1 = 0 | x_3 = 1) + p(x_1 = 0 | x_3 = 0)
+$$ $$
+p(x_1 = 0 | y = high) = 0.25 + 0.68
+$$
+and for y = low:
+$$
+p(x_1 = 0 | y = low) = p(x_1 = 0 | x_3 = 1) + p(x_1 = 0 | x_3 = 0)
+$$
+so:
+$$
+\frac{0.47 \times (0.25 + 0.68)} {(0.47 \times (0.25 + 0.68) + 0.53 \times (0.04 + 0.03))} = 0.92
+$$
+#### Solution from exam pdf
+![[Pasted image 20240518004947.png]]
+

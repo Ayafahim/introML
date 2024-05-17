@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/Linear regression model.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/Linear regression model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/Linear regression model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Binary tables.md"
+                "file": "Exams/Linear regression model.md"
               }
             }
           }
@@ -197,9 +197,17 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Pasted image 20240517235352.png",
-    "Exams/ANN.md",
     "Exams/Logistic Regression.md",
+    "Exams/Linear regression model.md",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Pasted image 20240518004947.png",
+    "Pasted image 20240518004150.png",
+    "Exams/ANN.md",
+    "Pasted image 20240518003857.png",
+    "Exams/Cross validation.md",
+    "Pasted image 20240518003710.png",
+    "Exams/Binary tables.md",
+    "Pasted image 20240517235352.png",
     "Pasted image 20240517234201.png",
     "Exams/PCA Problems.md",
     "Pasted image 20240517233648.png",
@@ -207,15 +215,9 @@
     "Exams/Histograms and boxplots.md",
     "Pasted image 20240517230509.png",
     "Pasted image 20240517230502.png",
-    "Pasted image 20240517230454.png",
-    "Pasted image 20240517225932.png",
-    "Pasted image 20240517225927.png",
     "Exams/ROC.md",
     "Exams/S16.md",
-    "Exams/Binary tables.md",
-    "Exams/Cross validation.md",
     "Exams/K-means algorithm.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Chapters/PCA.md",
     "Chapters/Data and Attribute Types.md",
     "Intro to ML/Untitled.md",
@@ -227,8 +229,6 @@
     "Exams/Jaccard Similarity.md",
     "Exams/Hunts Algorithm.md",
     "Exams/GMM.md",
-    "Pasted image 20240516031822.png",
-    "Pasted image 20240516031722.png",
     "Exams/Adaboost.md",
     "Exams/Covariance.md",
     "Exams/F21.md",
