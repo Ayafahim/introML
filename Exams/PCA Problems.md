@@ -485,5 +485,12 @@ print("Fourth Singular Value:", sigma4)
 ```
 
 ---
+## F23, Q1) Which one of the following matrices represents the empirical correlation matrix for these attributes?
+![[Pasted image 20240517225932.png]]
+![[Pasted image 20240517225927.png]]
 
+### Solution
 
+If you look at option b you can see $cov(x_1,x_4)$ is 0.55 which doesnt match since we can see it has a negative tilt which means it should be negative.
+
+It cant be option D because 0.25 is a very small covariance for $x_1,x_2$ since they are strongly correlated. And for option A we see $x_3,x_4$ are not correlated so 0.72 is too high, it should be closer to 0, therefore its option C.
