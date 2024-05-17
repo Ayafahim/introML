@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Binary tables.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Binary tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Multinominal Regression.md",
+                "file": "Exams/Binary tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Multinominal Regression.md"
+                "file": "Exams/Binary tables.md"
               }
             }
           }
@@ -197,7 +197,10 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/Cross validation.md",
+    "Exams/K-means algorithm.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Exams/Multinominal Regression.md",
     "Exams/ANN.md",
     "Exams/PCA Problems.md",
     "Chapters/PCA.md",
@@ -213,7 +216,6 @@
     "Shopping/Code snippets.md",
     "Exams/Jaccard Similarity.md",
     "Exams/Hunts Algorithm.md",
-    "Exams/Cross validation.md",
     "Exams/GMM.md",
     "Pasted image 20240516031822.png",
     "Pasted image 20240516031722.png",
@@ -228,8 +230,6 @@
     "Pasted image 20240516025032.png",
     "Exams/Covariance.md",
     "Exams/F21.md",
-    "Exams/K-means algorithm.md",
-    "Exams/Multinominal Regression.md",
     "Glossary & interperetations.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/S18.md",
