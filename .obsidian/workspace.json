@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/PCA.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/PCA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/PCA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
+                "file": "Chapters/PCA.md"
               }
             }
           }
@@ -197,17 +197,17 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/Binary tables.md",
     "Exams/Jaccard Similarity.md",
     "Chapters/PCA.md",
-    "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/S16.md",
     "Readme.md",
     "Exams/PCA Problems.md",
     "Exams/F21.md",
     "Exams/Linear regression model.md",
     "Exams/Logistic Regression.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Pasted image 20240518004947.png",
     "Pasted image 20240518004150.png",
     "Exams/ANN.md",
