@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/PCA.md"
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
               }
             }
           }
@@ -197,11 +197,11 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/PCA.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/Binary tables.md",
     "Exams/Jaccard Similarity.md",
-    "Chapters/PCA.md",
     "Exams/S16.md",
     "Readme.md",
     "Exams/PCA Problems.md",
