@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "mode": "preview",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cova",
+                "query": "smc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Jaccard Similarity.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Jaccard Similarity.md"
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
               }
             }
           }
@@ -197,6 +197,8 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/Binary tables.md",
+    "Exams/Jaccard Similarity.md",
     "Chapters/PCA.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/S16.md",
@@ -212,7 +214,6 @@
     "Pasted image 20240518003857.png",
     "Exams/Cross validation.md",
     "Pasted image 20240518003710.png",
-    "Exams/Binary tables.md",
     "Pasted image 20240517235352.png",
     "Pasted image 20240517234201.png",
     "Pasted image 20240517233648.png",
@@ -229,7 +230,6 @@
     "Chapters/9) Decision Trees.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Shopping/Code snippets.md",
-    "Exams/Jaccard Similarity.md",
     "Exams/Hunts Algorithm.md",
     "Exams/GMM.md",
     "Exams/Adaboost.md",
