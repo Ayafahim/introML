@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Binary tables.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Binary tables.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -197,16 +197,18 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/GMM.md",
+    "Exams/Covariance matrix.md",
+    "Exams/S16.md",
+    "Exams/Binary tables.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Chapters/Data and Attribute Types.md",
     "Exams/Jaccard Similarity.md",
     "Exams/PCA Problems.md",
-    "Exams/S16.md",
     "Exams/S18.md",
     "Exams/F21.md",
     "Chapters/PCA.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
-    "Exams/Binary tables.md",
     "Readme.md",
     "Exams/Linear regression model.md",
     "Exams/Logistic Regression.md",
@@ -226,13 +228,11 @@
     "Exams/ROC.md",
     "Exams/K-means algorithm.md",
     "Intro to ML/Untitled.md",
-    "Exams/Covariance matrix.md",
     "Chapters/8) Classification & regression.md",
     "Chapters/9) Decision Trees.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Shopping/Code snippets.md",
     "Exams/Hunts Algorithm.md",
-    "Exams/GMM.md",
     "Chapters",
     "Exams",
     "images",
