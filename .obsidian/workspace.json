@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/S16.md"
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
               }
             }
           }
@@ -197,8 +197,8 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Chapters/Data and Attribute Types.md",
     "Exams/S16.md",
+    "Chapters/Data and Attribute Types.md",
     "Chapters/PCA.md",
     "Exams/GMM.md",
     "Exams/Covariance matrix.md",
