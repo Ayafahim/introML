@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Exams/Binary tables.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Exams/Binary tables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md",
+                "file": "Exams/Binary tables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/Data and Attribute Types.md"
+                "file": "Exams/Binary tables.md"
               }
             }
           }
@@ -197,12 +197,13 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Chapters/Data and Attribute Types.md",
     "Exams/Jaccard Similarity.md",
     "Exams/PCA Problems.md",
     "Exams/S16.md",
     "Exams/S18.md",
     "Exams/F21.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Chapters/PCA.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Exams/Binary tables.md",
@@ -224,7 +225,6 @@
     "Pasted image 20240517230502.png",
     "Exams/ROC.md",
     "Exams/K-means algorithm.md",
-    "Chapters/Data and Attribute Types.md",
     "Intro to ML/Untitled.md",
     "Exams/Covariance matrix.md",
     "Chapters/8) Classification & regression.md",
