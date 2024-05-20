@@ -61,8 +61,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/ANN.md",
-                "mode": "preview",
+                "file": "Exams/PCA Problems.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "s18",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/ANN.md",
+                "file": "Exams/PCA Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/ANN.md",
+                "file": "Exams/PCA Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/ANN.md"
+                "file": "Exams/PCA Problems.md"
               }
             }
           }
@@ -197,6 +197,8 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Pasted image 20240520174017.png",
+    "Exams/ANN.md",
     "Chapters/PCA.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/S16.md",
@@ -214,7 +216,6 @@
     "Exams/Logistic Regression.md",
     "Pasted image 20240518004947.png",
     "Pasted image 20240518004150.png",
-    "Exams/ANN.md",
     "Pasted image 20240518003857.png",
     "Exams/Cross validation.md",
     "Pasted image 20240518003710.png",
@@ -232,7 +233,6 @@
     "Chapters/9) Decision Trees.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Shopping/Code snippets.md",
-    "Exams/Hunts Algorithm.md",
     "Chapters",
     "Exams",
     "images",

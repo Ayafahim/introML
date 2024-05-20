@@ -546,3 +546,8 @@ z = V_2.T.dot(tilde_x4)
 x4_hat = V_2.dot(z) + mean_X  
 print(x4_hat)
 ```
+
+---
+## F17, Q3) Which one of the four observations in Figure 2 corresponds to the worst performing player indicated in the boxplots of Figure 1?
+![[Pasted image 20240520174017.png]]
+
