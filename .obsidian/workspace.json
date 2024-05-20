@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Dendograms and clusters.md",
+                "file": "Exams/ROC.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Dendograms and clusters.md",
+                "file": "Exams/ROC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Dendograms and clusters.md",
+                "file": "Exams/ROC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Dendograms and clusters.md"
+                "file": "Exams/ROC.md"
               }
             }
           }
@@ -197,8 +197,17 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Pasted image 20240521004150.png",
+    "Exams/Classifier Matching.md",
+    "Pasted image 20240521013248.png",
+    "Exams/KDE.md",
+    "Pasted image 20240521012728.png",
+    "Pasted image 20240521005851.png",
+    "Exams/Histograms and boxplots.md",
     "Exams/KNN.md",
+    "Exams/Adaboost.md",
+    "Exams/Dendograms and clusters.md",
+    "Pasted image 20240521005200.png",
+    "Pasted image 20240521004150.png",
     "Pasted image 20240521003452.png",
     "Exams/S16.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
@@ -208,31 +217,21 @@
     "Exams/Linear regression model.md",
     "Pasted image 20240520220421.png",
     "Pasted image 20240520214911.png",
-    "Pasted image 20240520214908.png",
     "Exams/Cross validation.md",
     "Exams/Binary tables.md",
     "Exams/ANN.md",
     "Exams/Logistic Regression.md",
     "Glossary & interperetations.md",
-    "images/Pasted image 20240516001740.png",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
-    "images/Pasted image 20240520213428.png",
-    "images/Pasted image 20240518004150.png",
-    "images/Pasted image 20240520212754.png",
-    "Exams/Histograms and boxplots.md",
     "Exams/Covariance.md",
     "Exams/PCA Problems.md",
     "Exams/K-means algorithm.md",
-    "Exams/Dendograms and clusters.md",
     "Exams/GMM.md",
-    "Exams/Adaboost.md",
     "Chapters/PCA.md",
     "Exams/Dendograms.md",
     "Exams/Cross-validation.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Covariance Matrix.md",
-    "Exams/F21.md",
-    "Exams/Hunts Algorithm.md",
     "Chapters",
     "Exams",
     "images",

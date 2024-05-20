@@ -251,3 +251,73 @@ print(f"Classification using Chebyshev distance (d∞): {chebyshev_class}")
 # To change the value of k, modify the 'k' variable.
 # The distance functions and KNN classifier function can also be customized as needed.
 ```
+---
+## F23, Q19) Consider the distances in Table 6 based on 10 observations from the CCPP dataset. The class labels C1, C2 (see table caption for details) will be predicted using a k-nearest neighbour classifier based on the distances given in Table 6 (ties are broken in the usual manner by considering the nearest observation from the tied classes). Suppose we use leave-one-out cross validation (i.e., the observation that is being predicted is left out) and a 3-nearest neighbour classifier (i.e., k = 3). What is the accuracy computed for all N = 10 observations?
+
+### Script
+
+```python
+from fractions import Fraction  
+  
+import numpy as np  
+  
+# Distance matrix (10x10) extracted from the table  
+distance_matrix = np.array([  
+    [0.0, 2.91, 0.63, 1.88, 1.02, 1.82, 1.92, 1.58, 1.08, 1.43],  
+    [2.91, 0.0, 3.23, 3.9, 2.88, 3.27, 3.48, 4.02, 3.08, 3.47],  
+    [0.63, 3.23, 0.0, 2.03, 1.06, 2.15, 2.11, 1.15, 1.09, 1.65],  
+    [1.88, 3.9, 2.03, 0.0, 2.52, 1.04, 2.25, 2.42, 2.18, 2.17],  
+    [1.02, 2.88, 1.06, 2.52, 0.0, 2.44, 2.38, 1.53, 1.71, 1.94],  
+    [1.82, 3.27, 2.15, 1.04, 2.44, 0.0, 1.93, 2.72, 1.98, 1.8],  
+    [1.92, 3.48, 2.11, 2.25, 2.38, 1.93, 0.0, 2.53, 2.09, 1.66],  
+    [1.58, 4.02, 1.15, 2.42, 1.53, 2.72, 2.53, 0.0, 1.68, 2.06],  
+    [1.08, 3.08, 1.09, 2.18, 1.71, 1.98, 2.09, 1.68, 0.0, 1.48],  
+    [1.43, 3.47, 1.65, 2.17, 1.94, 1.8, 1.66, 2.06, 1.48, 0.0]  
+])  
+  
+# Class labels for each observation (you may need to adjust these based on the actual labels)  
+# Assuming C1 for o1, o2, o4, o5 and C2 for o3, o6, o7, o9, o10, and C3 for o8  
+class_labels = ['C1', 'C1', 'C1', 'C2', 'C2', 'C2', 'C2', 'C2', 'C3', 'C3']  
+  
+error_count = 0  
+total_observations = len(class_labels)  
+  
+for i in range(total_observations):  
+    # Extract the distances for the i-th observation to all other observations  
+    distances = [(distance_matrix[i][j], class_labels[j]) for j in range(total_observations) if j != i]  
+  
+    # Sort based on distance  
+    distances.sort(key=lambda x: x[0])  
+  
+    # Select the classes of the 3 nearest neighbours  
+    k_nearest_classes = [distances[j][1] for j in range(1)]  # TODO: Note: select 3 nearest neighbors  
+  
+    # Check for tie in the nearest neighbors' classes  
+    unique_classes, counts = np.unique(k_nearest_classes, return_counts=True)  
+    max_count = np.max(counts)  
+    max_count_classes = unique_classes[counts == max_count]  
+  
+    if len(max_count_classes) > 1:  
+        # If there is a tie, classify based on the closest neighbor  
+        prediction = distances[0][1]  
+    else:  
+        # Predict the class based on majority vote  
+        prediction = max_count_classes[0]  
+  
+    # Check if the prediction is correct  
+    if prediction != class_labels[i]:  
+        error_count += 1  
+  
+# Calculate the error rate  
+error_rate = error_count / total_observations  
+error_rate_as_fraction = Fraction(error_rate).limit_denominator()  
+print("Error Rate:", error_rate)  
+print("Error Rate as Fraction:", error_rate_as_fraction)  
+  
+# Calculate the accuracy rate  
+accuracy_rate = 1 - error_rate  
+accuracy_rate_as_fraction = Fraction(accuracy_rate).limit_denominator()  
+print("Accuracy Rate:", accuracy_rate)  
+print("Accuracy Rate as Fraction:", accuracy_rate_as_fraction)
+```
+

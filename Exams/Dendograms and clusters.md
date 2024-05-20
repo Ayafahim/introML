@@ -288,6 +288,54 @@ Just use script above but put Q clusters into 1 cluster.
 ---
 ## F23, Q17) Consider the observations and the pairwise distances in Table 6. At which height will groups/clusters containing o9 and o10 merge in a dendrogram when using the complete linkage function?
 
-![[Pasted image 20240521004150.png]]
+![[Pasted image 20240521005200.png]]
 
+## Solution
+Use this script to create the dendogram an check the height. 
+
+```python
+import numpy as np  # type: ignore  
+import matplotlib.pyplot as plt  # type: ignore  
+from scipy.cluster.hierarchy import dendrogram, linkage  # type: ignore  
+from scipy.spatial.distance import squareform  # type: ignore  
+  
+correct_distance_matrix = np.array([  
+    [0.0, 2.91, 0.63, 1.88, 1.02, 1.82, 1.92, 1.58, 1.08, 1.43],  
+    [2.91, 0.0, 3.23, 3.9, 2.88, 3.27, 3.48, 4.02, 3.08, 3.47],  
+    [0.63, 3.23, 0.0, 2.03, 1.06, 2.15, 2.11, 1.15, 1.09, 1.65],  
+    [1.88, 3.9, 2.03, 0.0, 2.52, 1.04, 2.25, 2.42, 2.18, 2.17],  
+    [1.02, 2.88, 1.06, 2.52, 0.0, 2.44, 2.38, 1.53, 1.71, 1.94],  
+    [1.82, 3.27, 2.15, 1.04, 2.44, 0.0, 1.93, 2.72, 1.98, 1.8],  
+    [1.92, 3.48, 2.11, 2.25, 2.38, 1.93, 0.0, 2.53, 2.09, 1.66],  
+    [1.58, 4.02, 1.15, 2.42, 1.53, 2.72, 2.53, 0.0, 1.68, 2.06],  
+    [1.08, 3.08, 1.09, 2.18, 1.71, 1.98, 2.09, 1.68, 0.0, 1.48],  
+    [1.43, 3.47, 1.65, 2.17, 1.94, 1.8, 1.66, 2.06, 1.48, 0.0]  
+])  
+  
+  
+correct_distance_matrix = (correct_distance_matrix + correct_distance_matrix.T) / 2  
+# Set diagonal to zero  
+np.fill_diagonal(correct_distance_matrix, 0)  
+  
+# Convert the distance matrix to a condensed form  
+condensed_matrix = squareform(correct_distance_matrix)  
+  
+# Perform hierarchical clustering using complete linkage  
+  
+# TODO: If the question is minimum/single linkage use 'single' otherwise if maximum/complete linkage use 'complete' and 'average' for average in the second parameter  
+linked = linkage(condensed_matrix, 'single')  
+  
+# Plot the dendrogram  
+plt.figure(figsize=(10, 7))  
+dendrogram(linked,  
+           orientation='top',  
+           labels=range(1, 11),  
+           # TODO: Remember to change the range corresponding to the size of matrix/table (if it's 9x9 then range is 1,10 if 10x10 range it 1,11)  
+           distance_sort='descending',  
+           show_leaf_counts=True)  
+plt.title('Dendrogram for Hierarchical Clustering')  
+plt.xlabel('Index of Point')  
+plt.ylabel('Distance')  
+plt.show()
+```
 
