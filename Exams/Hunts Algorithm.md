@@ -131,3 +131,8 @@ print("Accuracy of the split at x4 <= 0.55:", accuracy)
 print("Right node counts:", right_counts_055)
 ```
 
+---
+
+## F17, Q6) Which statement regarding the purity gain ∆ of the split is correct?
+
+![[Pasted image 20240520181718.png]]

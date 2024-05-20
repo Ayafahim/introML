@@ -406,7 +406,7 @@ Looking at the scatter plot in Figure 2, we see the data clustered by type (Kama
 
 --- 
 
-## F17, Q2) What is the value of the fourth singular value $\sigma_4$?
+## F17, Q2) What is the value of the fourth singular value $\sigma_4$? #F
 
 #### Full question:
 A Principal Component Analysis (PCA) is carried out on the standardized attributes $x_1$-$x_4$, forming the standardized matrix $\tilde{X}$. The squared Frobenius norm of the standardized matrix is given by $\|\tilde{X}\|_F^2 = 212$. A singular value decomposition is applied to the matrix $\tilde{X}$ and we find that the first three singular values are $\sigma_1 = 11.1$, $\sigma_2 = 7.2$, $\sigma_3 = 5.2$. What is the value of the fourth singular value $\sigma_4$?
@@ -550,4 +550,25 @@ print(x4_hat)
 ---
 ## F17, Q3) Which one of the four observations in Figure 2 corresponds to the worst performing player indicated in the boxplots of Figure 1?
 ![[Pasted image 20240520174017.png]]
+
+### Script
+
+```python
+import numpy as np # type: ignore  
+  
+# Define the observation vector and projection matrix  
+vector = np.array([0.68, 0.66, -0.67, -1.47])  
+projection_matrix = np.array([  
+    [-0.60, 0.02],  
+    [-0.61, 0],  
+    [-0.46, 0.46],  
+    [0.25, 0.89]  
+])  
+  
+# Calculate the projection  
+projected_vector = projection_matrix.T.dot(vector)  
+  
+# Output the result  
+print("Projected vector:", projected_vector)
+```
 

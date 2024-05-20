@@ -10,3 +10,7 @@ Where $cov(x_1,x_2)$ = 0.56 & the variances are in the diagonal so $var(x_1) = 0
 $$
 corr(x_1,x_2) = \frac{0.56}{0.5 \times 1.5 } = 0.647
 $$
+---
+## S23, Q2) Calculate covariance 
+
+
