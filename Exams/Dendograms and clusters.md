@@ -285,3 +285,9 @@ print(f"Cosine Similarity: {cosine_similarity:.3f}")
 
 Just use script above but put Q clusters into 1 cluster.
 
+---
+## F23, Q17) Consider the observations and the pairwise distances in Table 6. At which height will groups/clusters containing o9 and o10 merge in a dendrogram when using the complete linkage function?
+
+![[Pasted image 20240521004150.png]]
+
+

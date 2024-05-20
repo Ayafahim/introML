@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Dendograms and clusters.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "F23",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Dendograms and clusters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/S16.md",
+                "file": "Exams/Dendograms and clusters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/S16.md"
+                "file": "Exams/Dendograms and clusters.md"
               }
             }
           }
@@ -197,6 +197,10 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Pasted image 20240521004150.png",
+    "Exams/KNN.md",
+    "Pasted image 20240521003452.png",
+    "Exams/S16.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Pasted image 20240520221015.png",
     "Pasted image 20240520220858.png",
@@ -222,16 +226,13 @@
     "Exams/Dendograms and clusters.md",
     "Exams/GMM.md",
     "Exams/Adaboost.md",
-    "images/Pasted image 20240520210947.png",
     "Chapters/PCA.md",
     "Exams/Dendograms.md",
     "Exams/Cross-validation.md",
-    "Exams/KNN.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Covariance Matrix.md",
     "Exams/F21.md",
     "Exams/Hunts Algorithm.md",
-    "Exams/S16.md",
     "Chapters",
     "Exams",
     "images",
