@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Exams/S16.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Exams/S16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Exams/S16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
+                "file": "Exams/S16.md"
               }
             }
           }
@@ -197,12 +197,16 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Pasted image 20240520221015.png",
+    "Pasted image 20240520220858.png",
+    "Exams/Theory questions.md",
+    "Exams/Linear regression model.md",
+    "Pasted image 20240520220421.png",
     "Pasted image 20240520214911.png",
     "Pasted image 20240520214908.png",
-    "Exams/Linear regression model.md",
     "Exams/Cross validation.md",
     "Exams/Binary tables.md",
-    "Exams/Theory questions.md",
     "Exams/ANN.md",
     "Exams/Logistic Regression.md",
     "Glossary & interperetations.md",
@@ -214,18 +218,13 @@
     "Exams/Histograms and boxplots.md",
     "Exams/Covariance.md",
     "Exams/PCA Problems.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/K-means algorithm.md",
     "Exams/Dendograms and clusters.md",
     "Exams/GMM.md",
     "Exams/Adaboost.md",
     "images/Pasted image 20240520210947.png",
-    "images/Pasted image 20240520210327.png",
     "Chapters/PCA.md",
-    "images/Pasted image 20240520203528.png",
-    "images/Pasted image 20240520203307.png",
     "Exams/Dendograms.md",
-    "images/Pasted image 20240520202501.png",
     "Exams/Cross-validation.md",
     "Exams/KNN.md",
     "Chapters/Data and Attribute Types.md",
