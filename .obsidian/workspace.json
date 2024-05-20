@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/ANN.md",
                 "mode": "preview",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/ANN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/ANN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/PCA.md"
+                "file": "Exams/ANN.md"
               }
             }
           }
@@ -197,10 +197,10 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Chapters/PCA.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/S16.md",
     "Chapters/Data and Attribute Types.md",
-    "Chapters/PCA.md",
     "Exams/GMM.md",
     "Exams/Covariance matrix.md",
     "Exams/Binary tables.md",
