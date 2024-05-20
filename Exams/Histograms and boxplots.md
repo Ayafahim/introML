@@ -12,6 +12,22 @@ You can also see in the figure for the variances that the densities for $x_3$ ar
 
 So option B
 
+---
+## S23, Q1) Variance and mean for from histogram
+
+
+![[Pasted image 20240520190201.png]]
+![[Pasted image 20240520190219.png]]
+
+
+### Solution 
+
+Mean er omkring 50% percentile, estimeret.
+Variance - rang/3, rangen er hvor meget der er mellem det interval hvor 99% af dataene ligger. 
+
+Fx.
+for x1 fra ca. -7 til 0 ligger det meste data og der er fra -7 til 0 = 7, så er rangen 7/3 = 2.33 så variancen er ca 2.33
+Svaret for denne opgave A
 
 
 

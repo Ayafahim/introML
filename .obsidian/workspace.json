@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/KNN.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/KNN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/KNN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapters/PCA.md"
+                "file": "Exams/KNN.md"
               }
             }
           }
@@ -197,11 +197,21 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
+    "Pasted image 20240520194312.png",
+    "Pasted image 20240520194024.png",
     "Exams/PCA Problems.md",
+    "Exams/KNN.md",
+    "Pasted image 20240520193153.png",
+    "Pasted image 20240520192957.png",
+    "Exams/Histograms and boxplots.md",
+    "Chapters/PCA.md",
+    "Pasted image 20240520190219.png",
+    "Pasted image 20240520190201.png",
+    "Chapters/Data and Attribute Types.md",
+    "Chapters/Covariance Matrix.md",
     "Exams/Covariance.md",
     "Exams/Cross validation.md",
     "Exams/F21.md",
-    "Chapters/Covariance Matrix.md",
     "Exams/Hunts Algorithm.md",
     "Pasted image 20240520181718.png",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
@@ -209,8 +219,6 @@
     "Exams/GMM.md",
     "Pasted image 20240520174017.png",
     "Exams/ANN.md",
-    "Chapters/PCA.md",
-    "Chapters/Data and Attribute Types.md",
     "Exams/Binary tables.md",
     "Exams/Jaccard Similarity.md",
     "Exams/S18.md",
@@ -221,18 +229,10 @@
     "Pasted image 20240518004947.png",
     "Pasted image 20240518004150.png",
     "Pasted image 20240518003857.png",
-    "Pasted image 20240518003710.png",
-    "Pasted image 20240517235352.png",
-    "Pasted image 20240517234201.png",
-    "Pasted image 20240517233648.png",
-    "Pasted image 20240517233627.png",
-    "Exams/Histograms and boxplots.md",
     "Exams/ROC.md",
     "Exams/K-means algorithm.md",
     "Intro to ML/Untitled.md",
     "Chapters/8) Classification & regression.md",
-    "Chapters/9) Decision Trees.md",
-    "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Chapters",
     "Exams",
     "images",

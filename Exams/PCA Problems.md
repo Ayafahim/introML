@@ -406,7 +406,7 @@ Looking at the scatter plot in Figure 2, we see the data clustered by type (Kama
 
 --- 
 
-## F17, Q2) What is the value of the fourth singular value $\sigma_4$? #F
+## F17, Q2) What is the value of the fourth singular value $\sigma_4$? #Frobenius
 
 #### Full question:
 A Principal Component Analysis (PCA) is carried out on the standardized attributes $x_1$-$x_4$, forming the standardized matrix $\tilde{X}$. The squared Frobenius norm of the standardized matrix is given by $\|\tilde{X}\|_F^2 = 212$. A singular value decomposition is applied to the matrix $\tilde{X}$ and we find that the first three singular values are $\sigma_1 = 11.1$, $\sigma_2 = 7.2$, $\sigma_3 = 5.2$. What is the value of the fourth singular value $\sigma_4$?
@@ -570,5 +570,32 @@ projected_vector = projection_matrix.T.dot(vector)
   
 # Output the result  
 print("Projected vector:", projected_vector)
+```
+
+---
+## S23, Q3) It is noted that certain elements are missing in  the SVD, specifically $v_{1,3}, v_{2,5}$ and $\sigma_{2,2}$. Additionally,  $\|\tilde{X}\|_F^2 = 2814.8909$
+
+![[Pasted image 20240520192957.png]]
+
+![[Pasted image 20240520193153.png]]
+
+
+## Solution 
+
+For the singular value $\sigma$ remember that
+$$
+\|\tilde{X}\|_F^2 = \sigma_1^2 + \sigma_2^2 + \sigma_3^2 + \sigma_4^2 + \ldots
+$$
+
+so just put the values in and solve, i used maple:
+
+```maple
+fsolve(2814.8909 = 30.3832^2 + 22.7730^2 + 19.7263^2 + 16.0724^2 + x^2, x)
+```
+
+for the V do the same but remember the row should be equal to 1:
+
+```maple
+solve(1 = (-0.5939)^2 + 0.2906^2 + 0.0621^2 + 0.6652^2 + x^2, x)
 ```
 

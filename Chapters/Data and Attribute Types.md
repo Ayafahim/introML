@@ -1,5 +1,4 @@
 
-
 ## Attribute Types
 
 | Attribute Type | Description                                                                                       | Example                                            |
