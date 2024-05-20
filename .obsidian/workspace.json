@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/PCA.md",
+                "file": "Exams/PCA Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "F23",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/K-means algorithm.md"
+                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
               }
             }
           }
@@ -197,42 +197,42 @@
   },
   "active": "7ec0493f9b4ac6ca",
   "lastOpenFiles": [
-    "Pasted image 20240520203528.png",
-    "Exams/Dendograms and clusters.md",
-    "Pasted image 20240520203307.png",
-    "Exams/Dendograms.md",
-    "Pasted image 20240520202501.png",
+    "Pasted image 20240520214911.png",
+    "Pasted image 20240520214908.png",
+    "Exams/Linear regression model.md",
     "Exams/Cross validation.md",
-    "Exams/Cross-validation.md",
-    "Exams/K-means algorithm.md",
-    "Exams/KNN.md",
-    "Exams/Covariance.md",
-    "Pasted image 20240520202225.png",
-    "Pasted image 20240520201224.png",
-    "Pasted image 20240520194312.png",
-    "Pasted image 20240520194024.png",
-    "Exams/PCA Problems.md",
-    "Pasted image 20240520193153.png",
-    "Pasted image 20240520192957.png",
+    "Exams/Binary tables.md",
+    "Exams/Theory questions.md",
+    "Exams/ANN.md",
+    "Exams/Logistic Regression.md",
+    "Glossary & interperetations.md",
+    "images/Pasted image 20240516001740.png",
+    "Intro to ML/Machine Learning Tasks and Concepts.md",
+    "images/Pasted image 20240520213428.png",
+    "images/Pasted image 20240518004150.png",
+    "images/Pasted image 20240520212754.png",
     "Exams/Histograms and boxplots.md",
+    "Exams/Covariance.md",
+    "Exams/PCA Problems.md",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Exams/K-means algorithm.md",
+    "Exams/Dendograms and clusters.md",
+    "Exams/GMM.md",
+    "Exams/Adaboost.md",
+    "images/Pasted image 20240520210947.png",
+    "images/Pasted image 20240520210327.png",
     "Chapters/PCA.md",
-    "Pasted image 20240520190219.png",
-    "Pasted image 20240520190201.png",
+    "images/Pasted image 20240520203528.png",
+    "images/Pasted image 20240520203307.png",
+    "Exams/Dendograms.md",
+    "images/Pasted image 20240520202501.png",
+    "Exams/Cross-validation.md",
+    "Exams/KNN.md",
     "Chapters/Data and Attribute Types.md",
     "Chapters/Covariance Matrix.md",
     "Exams/F21.md",
     "Exams/Hunts Algorithm.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/S16.md",
-    "Exams/GMM.md",
-    "Exams/ANN.md",
-    "Exams/Binary tables.md",
-    "Exams/S18.md",
-    "Chapters/Summary Statistics and Measures of Similarity.md",
-    "Readme.md",
-    "Exams/Linear regression model.md",
-    "Exams/Logistic Regression.md",
-    "Exams/ROC.md",
     "Chapters",
     "Exams",
     "images",

@@ -244,3 +244,53 @@ $$
 3. **Key Steps:**
    - Set unknown components to maximize and minimize matches.
    - Compute SMC for both scenarios to find the range.
+
+### Script
+```python
+import numpy as np  
+  
+def compute_smc(o1, o2):  
+    """  
+    Compute the Simple Matching Coefficient (SMC) between two binary vectors.    Parameters:    o1 (list or np.ndarray): First binary vector    o2 (list or np.ndarray): Second binary vector    Returns:    float: Simple Matching Coefficient    """    o1 = np.array(o1)  
+    o2 = np.array(o2)  
+    matches = np.sum(o1 == o2)  
+    total = len(o1)  
+    smc = matches / total  
+    return smc  
+  
+def calculate_min_max_smc(o6, o11):  
+    """  
+    Calculate the minimum and maximum SMC between o6 and o11 with unknown values in o11.    Parameters:    o6 (list): Binary vector from table    o11 (list): Binary vector with unknown values represented by None    Returns:    tuple: (min_smc, max_smc)    """    # Known parts of o11  
+    known_indices = [i for i, x in enumerate(o11) if x is not None]  
+    unknown_indices = [i for i, x in enumerate(o11) if x is None]  
+  
+    # Known matches  
+    known_matches = sum(o6[i] == o11[i] for i in known_indices)  
+  
+    # Minimum SMC: Assume all unknown values do not match  
+    min_matches = known_matches  
+    min_smc = min_matches / len(o6)  
+  
+    # Maximum SMC: Assume all unknown values match  
+    max_matches = known_matches + len(unknown_indices)  
+    max_smc = max_matches / len(o6)  
+  
+    return min_smc, max_smc  
+  
+# Observation o6 from Table 2  
+o6 = [0, 1, 0, 1]  
+  
+# New observation o11 with unknown values represented by None  
+o11 = [0, None, None, 1]  
+  
+# Calculate minimum and maximum SMC  
+min_smc, max_smc = calculate_min_max_smc(o6, o11)  
+  
+print(f"Minimum SMC(o6, o11): {min_smc:.2f}")  
+print(f"Maximum SMC(o6, o11): {max_smc:.2f}")  
+  
+# Based on the given options, the correct answer is:  
+# A.  
+# min SMC(o6, o11) = 0.50  
+# max SMC(o6, o11) = 1.0
+```

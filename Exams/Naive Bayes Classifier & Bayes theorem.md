@@ -77,3 +77,38 @@ $$
 #### Solution from exam pdf
 ![[Pasted image 20240518004947.png]]
 
+---
+
+## S23, Q10) What is then the probability y corresponds to Machine given an observation has ˆx2 = 1 ? With table
+
+> [!IMPORTANT]
+> The table below is different and you need to use the product rule for this. Note it says 
+> p(ˆx2, ˆx4, y) og ikke p(ˆx2, ˆx4 | y)
+
+![[Pasted image 20240520210327.png]]
+
+
+So:
+
+$p(x_2 = 1, y = machine) = 0.08 +0.01 = 0.18$
+$p(x_a) = 0.08+0.1+0.16+0.16 = 0.5$
+
+
+$$
+\frac{(0.08 +0.01)}{(0.08+0.1+0.16+ 0.16)} = 0.36
+$$
+---
+
+## S23, Q11) What is the minimum number of evaluations of the normal density function N (x|μ, σ2) we have to perform to compute this quantity?
+
+![[Pasted image 20240520210947.png]]
+---
+## F23, Q11) Consider the Table 4 that shows the class conditional joint probability for the attributes x1, x3 of the CCPP dataset after binarization, while the prior probabilities for the two classes are p(y = Low) = 0.53 and p(y = High) = 0.47.  What is the probability the energy production to be High when x1 = 0?
+
+![[Pasted image 20240520214908.png]]
+
+![[Pasted image 20240520214911.png]]
+
+
+$$
+\frac{(0.25+0.68) * 0.47}{}
