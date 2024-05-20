@@ -106,3 +106,168 @@ generalization_error = np.mean([test_error_best_model_i1, test_error_best_model_
 # Output the result  
 print(f"Generalization Error (E_gen): {generalization_error:.3f}")
 ```
+
+---
+## S23, Q6) Determine the error rates on the test set in each of the 2 outer folds based on the information in Table 3, Table 4 and Table 2
+
+![[Pasted image 20240520201224.png]]
+
+
+## Solution no script
+
+
+We consider the generalization error of K-nearest neighbour (KNN) classifiers with $K = [1, 3, 4]$ neighbors based on the observations in Table 2. We apply two-layer cross-validation to estimate the generalization error with 2 outer and 5 inner folds. Tables 3 and 4 provide partial results of the associated two-layer cross-validation. It is noted that, with other things being equal, a model with the lowest value of $K$ is preferred in this context. The specific split of the dataset in the two outer folds is also known:
+
+- Outer fold $i = 1$ training set: $o_1, o_2, o_4, o_8, o_9$.
+- Outer fold $i = 2$ training set: $o_3, o_5, o_6, o_7, o_{10}$.
+
+Determine the error rates on the test set in each of the 2 outer folds based on the information in Table 3, Table 4, and Table 2.
+
+### Solution Steps:
+
+1. **Tables Information:**
+   - Table 2: Pairwise Euclidean distances between the observations.
+   - Table 3: Error rates in inner folds for outer fold 1.
+   - Table 4: Error rates in inner folds for outer fold 2.
+
+2. **Optimal $K$ Selection:**
+   - For outer fold 1, the error rates in the inner folds for $K = 1, 3, 4$ are given in Table 3.
+   - For outer fold 2, the error rates in the inner folds for $K = 1, 3, 4$ are given in Table 4.
+   - The optimal $K$ is chosen based on the minimum error rate across the inner folds.
+
+3. **Calculating Test Error Rates:**
+   - For each outer fold, we use the optimal $K$ found from the inner folds to calculate the test error rate on the test set of the respective outer fold.
+
+#### Outer Fold 1:
+- Training set: $o_1, o_2, o_4, o_8, o_9$
+- Test set: $o_3, o_5, o_6, o_7, o_{10}$
+
+From Table 3, we observe the inner fold error rates for different values of $K$:
+- $K = 1$: $[0, 0, 1, 0, 0]$
+- $K = 3$: $[1, 1, 1, 1, 1]$
+- $K = 4$: $[1, 1, 1, 0, 0]$
+
+Optimal $K$ is the one with the minimum error rate. Here, $K = 1$ has the minimum error rate $\frac{0+0+1+0+0}{5} = 0.2$.
+
+#### Outer Fold 2:
+- Training set: $o_3, o_5, o_6, o_7, o_{10}$
+- Test set: $o_1, o_2, o_4, o_8, o_9$
+
+From Table 4, we observe the inner fold error rates for different values of $K$:
+- $K = 1$: $[0, 0, 1, 0, 1]$
+- $K = 3$: $[0, 0, 1, 0, 0]$
+- $K = 4$: $[0, 0, 1, 0, 0]$
+
+Optimal $K$ is the one with the minimum error rate. Here, $K = 3$ has the minimum error rate $\frac{0+0+1+0+0}{5} = 0.2$.
+
+Using the selected $K$ values, the error rates on the test set for each outer fold are computed.
+
+#### Test Error Calculation:
+- For outer fold 1 with $K = 1$:
+  - Use the KNN classifier with $K = 1$ on the test set observations $o_3, o_5, o_6, o_7, o_{10}$.
+  - The error rate calculation involves classifying these test observations and computing the misclassification rate.
+
+- For outer fold 2 with $K = 3$:
+  - Use the KNN classifier with $K = 3$ on the test set observations $o_1, o_2, o_4, o_8, o_9$.
+  - Similarly, calculate the misclassification rate.
+
+### Conclusion:
+From the exam solution, the correct answer is:
+
+- $E_{\text{test}, i=1} = 0.2$
+- $E_{\text{test}, i=2} = 0.6$
+
+Thus, the correct option is:
+
+**D. $E_{\text{test}, i=1} = 0.2$ and $E_{\text{test}, i=2} = 0.6$**
+
+### Solution with script
+
+- **Outer Fold 1:**
+    
+    - Training set: {o1, o2, o4, o8, o9} which corresponds to indices `[0, 1, 3, 7, 8]`
+    - Test set: {o3, o5, o6, o7, o10} which corresponds to indices `[2, 4, 5, 6, 9]`
+- **Outer Fold 2:**
+    
+    - Training set: {o3, o5, o6, o7, o10} which corresponds to indices `[2, 4, 5, 6, 9]`
+    - Test set: {o1, o2, o4, o8, o9} which corresponds to indices `[0, 1, 3, 7, 8]`
+
+
+```python 
+import numpy as np
+from sklearn.model_selection import KFold
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+
+# Distance matrix from the exam (Table 2)
+distance_matrix = np.array([
+    [0.0, 1.3, 4.1, 3.8, 4.5, 2.4, 3.2, 2.7, 3.0, 3.9],
+    [1.3, 0.0, 3.2, 3.1, 4.7, 2.3, 2.6, 2.2, 2.7, 4.2],
+    [4.1, 3.2, 0.0, 0.4, 4.9, 2.7, 1.1, 1.6, 2.4, 4.8],
+    [3.8, 3.1, 0.4, 0.0, 4.6, 2.5, 0.9, 1.3, 2.1, 4.5],
+    [4.5, 4.7, 4.9, 4.6, 0.0, 3.1, 4.4, 3.7, 2.8, 2.3],
+    [2.4, 2.3, 2.7, 2.5, 3.1, 0.0, 1.8, 1.2, 0.9, 2.8],
+    [3.2, 2.6, 1.1, 0.9, 4.4, 1.8, 0.0, 1.0, 1.7, 4.1],
+    [2.7, 2.2, 1.6, 1.3, 3.7, 1.2, 1.0, 0.0, 1.1, 3.6],
+    [3.0, 2.7, 2.4, 2.1, 2.8, 0.9, 1.7, 1.1, 0.0, 2.9],
+    [3.9, 4.2, 4.8, 4.5, 2.3, 2.8, 4.1, 3.6, 2.9, 0.0]
+])
+
+# Class labels from the exam
+labels = np.array([0, 0, 0, 0, 1, 1, 1, 1, 1, 1])
+
+# K values to evaluate
+k_values = [1, 3, 4]
+
+# Outer cross-validation split
+# These values are derived from the problem statement 
+# The indexes of o1,o2....
+
+outer_train_1 = [0, 1, 3, 7, 8]
+outer_test_1 = [2, 4, 5, 6, 9]
+outer_train_2 = [2, 4, 5, 6, 9]
+outer_test_2 = [0, 1, 3, 7, 8]
+
+# Inner cross-validation setup
+kf = KFold(n_splits=5)
+
+# Function to get indices of K nearest neighbors
+def get_knn_indices(dist_matrix, k):
+    return np.argsort(dist_matrix, axis=1)[:, 1:k+1]
+
+# Evaluate KNN classifier
+def evaluate_knn(train_indices, test_indices, k):
+    knn = KNeighborsClassifier(n_neighbors=k, metric='precomputed')
+    knn.fit(distance_matrix[train_indices][:, train_indices], labels[train_indices])
+    preds = knn.predict(distance_matrix[test_indices][:, train_indices])
+    return accuracy_score(labels[test_indices], preds)
+
+# Two-layer cross-validation
+def two_layer_cv(train_indices, k_values):
+    best_k = None
+    best_score = -1
+    for k in k_values:
+        scores = []
+        for train_inner, test_inner in kf.split(train_indices):
+            train_inner_indices = [train_indices[i] for i in train_inner]
+            test_inner_indices = [train_indices[i] for i in test_inner]
+            score = evaluate_knn(train_inner_indices, test_inner_indices, k)
+            scores.append(score)
+        avg_score = np.mean(scores)
+        if avg_score > best_score:
+            best_score = avg_score
+            best_k = k
+    return best_k
+
+# Outer fold 1
+best_k_1 = two_layer_cv(outer_train_1, k_values)
+error_rate_1 = 1 - evaluate_knn(outer_train_1, outer_test_1, best_k_1)
+
+# Outer fold 2
+best_k_2 = two_layer_cv(outer_train_2, k_values)
+error_rate_2 = 1 - evaluate_knn(outer_train_2, outer_test_2, best_k_2)
+
+# Results
+print(f"Error rate for outer fold 1: {error_rate_1}")
+print(f"Error rate for outer fold 2: {error_rate_2}")
+```

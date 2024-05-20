@@ -13,4 +13,5 @@ $$
 ---
 ## S23, Q2) Calculate covariance 
 
+![[Pasted image 20240520202225.png]]
 
