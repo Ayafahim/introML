@@ -29,5 +29,6 @@ Fx.
 for x1 fra ca. -7 til 0 ligger det meste data og der er fra -7 til 0 = 7, så er rangen 7/3 = 2.33 så variancen er ca 2.33
 Svaret for denne opgave A
 
+---
 
-
+## S19, Q1

@@ -1,5 +1,5 @@
 
-## S19, Q14) Which of the following options represents all (non-empty) itemsets with support greater than 0.15 (and only itemsets with support greater than 0.15)?
+## ?S19, Q14) Which of the following options represents all (non-empty) itemsets with support greater than 0.15 (and only itemsets with support greater than 0.15)?
 
 ![[Pasted image 20240516001614.png]]
 

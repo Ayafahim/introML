@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Exams/Histograms and boxplots.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "s20",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Exams/Histograms and boxplots.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/F21.md",
+                "file": "Exams/Histograms and boxplots.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/F21.md"
+                "file": "Exams/Histograms and boxplots.md"
               }
             }
           }
@@ -197,10 +197,14 @@
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
     "Exams/PCA Problems.md",
+    "Exams/ANN.md",
+    "Exams/ROC.md",
+    "Exams/Binary tables.md",
+    "Exams/Covariance.md",
+    "Exams/F21.md",
     "Exams/S18.md",
     "Exams/Adaboost.md",
     "Pasted image 20240521031659.png",
-    "Exams/Binary tables.md",
     "Exams/Cross validation.md",
     "Exams/Logistic Regression.md",
     "Exams/Linear regression model.md",
@@ -209,13 +213,11 @@
     "Pasted image 20240521025217.png",
     "Pasted image 20240521025142.png",
     "Exams/S16.md",
-    "Exams/Covariance.md",
     "Exams/GMM.md",
     "Exams/Theory questions.md",
     "Pasted image 20240521015126.png",
     "Pasted image 20240521015057.png",
     "Pasted image 20240521015004.png",
-    "Exams/ROC.md",
     "Exams/Classifier Matching.md",
     "Pasted image 20240521013248.png",
     "Exams/KDE.md",
@@ -225,13 +227,11 @@
     "Exams/KNN.md",
     "Exams/Dendograms and clusters.md",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
-    "Exams/ANN.md",
     "Glossary & interperetations.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
     "Exams/K-means algorithm.md",
     "Chapters/PCA.md",
     "Exams/Dendograms.md",
-    "Exams/Cross-validation.md",
     "Chapters",
     "Exams",
     "images",
