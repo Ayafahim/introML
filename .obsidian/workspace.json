@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Theory questions.md",
+                "file": "Exams/Regression model.md",
                 "mode": "source",
                 "source": false
               }
@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "f17",
+                "query": "s23",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Theory questions.md",
+                "file": "Exams/Regression model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Theory questions.md",
+                "file": "Exams/Regression model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Theory questions.md"
+                "file": "Exams/Regression model.md"
               }
             }
           }
@@ -184,6 +184,10 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
+    "Pasted image 20240521173634.png",
+    "Exams/Logistic Regression.md",
+    "Exams/Regression model.md",
+    "Exams/Theory questions.md",
     "Pasted image 20240521162147.png",
     "Chapters/Cluster Approaches.md",
     "Pasted image 20240521162045.png",
@@ -198,13 +202,11 @@
     "Pasted image 20240521160515.png",
     "Pasted image 20240521160512.png",
     "Exams/Classifier Matching.md",
-    "Exams/Theory questions.md",
     "Pasted image 20240521155842.png",
     "Pasted image 20240521155743.png",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Pasted image 20240521155654.png",
     "Exams/GMM.md",
-    "Pasted image 20240521155222.png",
     "Exams/ROC.md",
     "Exams/K-means algorithm.md",
     "Exams/Adaboost.md",
@@ -218,8 +220,6 @@
     "Exams/Classifier Trees.md",
     "Exams/S16.md",
     "Exams/PCA Problems.md",
-    "Chapters/PCA.md",
-    "Exams/Regression model.md",
     "Chapters",
     "Exams",
     "images",

@@ -245,3 +245,95 @@ lambda_mapping = {10: sorted_weights_by_norm[1], 100: sorted_weights_by_norm[2],
 #TODO: Rememebr to up lambda_mapping value based on what lambda is  
 print(f"The weight vector corresponding to lambda = 10 is: {lambda_mapping[10]}")
 ```
+---
+## S23, Q19) Which one of the following transformations was used  when learning w0 and w? #ridgeRegression
+
+![[Pasted image 20240521173634.png]]
+## Solution
+
+The problem involves a ridge regression model to predict a perceived annoyance measure (PAM) using transformed observations. Here are the details:
+
+Given:
+- A dataset with $N = 4$ observations and a single attribute.
+- Observations $\mathbf{x}$:
+  $$
+  \begin{bmatrix}
+  -0.5 \\
+  0.39 \\
+  1.19 \\
+  -1.08
+  \end{bmatrix}
+  $$
+- Corresponding perceived annoyance measures $y_r$:
+  $$
+  \begin{bmatrix}
+  -0.86 \\
+  -0.61 \\
+  1.37 \\
+  0.10
+  \end{bmatrix}
+  $$
+- Ridge regression parameters learned using a specific transformation of $x$, with $\lambda = 0.25$:
+  - $E_{\lambda=0.25} \approx 0.2$
+  - $w_0 = 0.0$
+  - $\mathbf{w} = \begin{bmatrix} 0.39 & 0.77 \end{bmatrix}$
+
+### Goal
+
+Determine which transformation was used to obtain the results.
+
+### Possible Transformations
+
+A. $\mathbf{x}_i = \begin{bmatrix} x_i \\ x_i^3 \end{bmatrix}$  
+B. $\mathbf{x}_i = \begin{bmatrix} x_i \\ \sin(x_i) \\ x_i^2 \end{bmatrix}$  
+C. $\mathbf{x}_i = \begin{bmatrix} x_i \\ \sin(x_i) \end{bmatrix}$  
+D. $\mathbf{x}_i = \begin{bmatrix} x_i \\ x_i^2 \end{bmatrix}$  
+E. Don’t know
+
+### Approach
+
+1. **Form the design matrix**: For each transformation, create the design matrix $\mathbf{X}$ using the observations $\mathbf{x}$.
+2. **Standardize the design matrix**: Subtract the mean and divide by the standard deviation for each column.
+3. **Calculate the ridge regression cost**: Compute the total cost $E_\lambda$ using the formula:
+$$
+E_\lambda = \sum_{i=1}^{N} (y_{r,i} - \mathbf{x}_i^T \mathbf{w} - w_0)^2 + \lambda \|\mathbf{w}\|_2^2
+$$
+4. **Match the cost**: Check which transformation gives the cost closest to $0.2$.
+
+```python
+import numpy as np  
+  
+# Given data  
+x = np.array([-0.5, 0.39, 1.19, -1.08])  
+yr = np.array([-0.86, -0.61, 1.37, 0.10])  
+lambda_ = 0.25  
+w0 = 0.0  
+w = np.array([0.39, 0.77])  
+  
+# Function to standardize the design matrix  
+def standardize(X):  
+    mean = np.mean(X, axis=0)  
+    std = np.std(X, axis=0, ddof=1)  
+    return (X - mean) / std  
+  
+# Function to calculate the ridge regression cost  
+def ridge_regression_cost(X, y, w, w0, lambda_):  
+    y_pred = X.dot(w) + w0  
+    error = y - y_pred  
+    return np.sum(error**2) + lambda_ * np.sum(w**2)  
+  
+# Transformations that match the dimensions of w  
+transformations = {  
+    'A': lambda x: np.column_stack((x, x**3)),  
+    'B': lambda x: np.column_stack((x, np.exp(x))),  
+    'C': lambda x: np.column_stack((x, np.sin(x))),  
+    'D': lambda x: np.column_stack((x, x**2))  
+}  
+  
+# Iterate over transformations and calculate costs  
+for key, transform in transformations.items():  
+    X = transform(x)  
+    X_standardized = standardize(X)  
+    cost = ridge_regression_cost(X_standardized, yr, w, w0, lambda_)  
+    print(f"Transformation {key}: Cost = {cost:.4f}")
+```
