@@ -240,3 +240,7 @@ def neural_network(x1, x2):
 output = neural_network(1, 1)  
 print("Output of the neural network:", output)
 ```
+
+---
+
+

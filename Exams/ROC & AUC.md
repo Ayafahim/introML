@@ -96,3 +96,91 @@ plt.legend(loc="lower right")
 plt.grid(True)  
 plt.show()
 ```
+
+---
+## S23,  Q21)
+
+
+
+The problem involves identifying which ROC curve corresponds to the given true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN) as a function of the threshold $\theta$.
+
+#### Given Information:
+
+- **TP, TN, FP, and FN Curves**: These are plotted as functions of the threshold $ \theta $.
+- **ROC Curves**: Four candidate ROC curves are provided.
+
+### Approach to Solution:
+
+1. **Identify Total Positives and Negatives**:
+   - The leftmost value of the TP curve gives the total number of positive-class observations $P$.
+   - The rightmost value of the TN curve gives the total number of negative-class observations $N$.
+
+2. **Choose a Point on the ROC Curve**:
+   - Select a threshold $\theta$ (commonly $\theta = 0.5$ is used).
+   - Determine the number of FP and TP at this threshold.
+
+3. **Calculate False Positive Rate (FPR) and True Positive Rate (TPR)**:
+   - $\text{FPR} = \frac{\text{FP}}{N}$
+   - $\text{TPR} = \frac{\text{TP}}{P}$
+
+4. **Match with Candidate ROC Curves**:
+   - Identify the ROC curve that includes the calculated point $(\text{FPR}, \text{TPR})$.
+
+### Detailed Solution Steps:
+
+1. **From the Solution Document**:
+
+   - **Total Positives (P)**: From the TP curve (left-most value), $P = 146$.
+   - **Total Negatives (N)**: From the TN curve (right-most value), $N = 136$.
+
+2. **Select $\theta = 0.5$**:
+
+   - At $\theta = 0.5$, the values are given as:
+     - $text{FP} = 42$
+     - $\text{TP} = 123$
+
+3. **Calculate FPR and TPR**:
+
+   - **FPR**: 
+     $$
+     \text{FPR} = \frac{\text{FP}}{N} = \frac{42}{136} \approx 0.31
+     $$
+
+   - **TPR**: 
+     $$
+     \text{TPR} = \frac{\text{TP}}{P} = \frac{123}{146} \approx 0.84
+     $$
+
+4. **Matching with ROC Curves**:
+
+   - From the solution, the point $(0.31, 0.84)$ rules out all options except ROC Curve 4.
+### Why?
+
+- **ROC Curve Definition**: The ROC curve plots the TPR versus FPR at various threshold settings. A specific point on this curve represents the performance of the classifier at a particular threshold.
+- **Point (0.31,0.84)**: This point should appear on the correct ROC curve corresponding to the threshold 𝜃=0.5.
+
+### Conclusion:
+
+The correct ROC curve corresponding to the given TP, TN, FP, and FN functions is:
+
+**D. ROC Curve 4**
+
+```python
+import numpy as np
+
+# Given data
+P = 146  # Total positive observations
+N = 136  # Total negative observations
+
+# Values at theta = 0.5
+TP = 123
+FP = 42
+
+# Calculate FPR and TPR
+FPR = FP / N
+TPR = TP / P
+
+print(f"False Positive Rate (FPR): {FPR:.2f}")
+print(f"True Positive Rate (TPR): {TPR:.2f}")
+```
+
