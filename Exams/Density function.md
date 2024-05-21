@@ -4,4 +4,11 @@
 ![[Pasted image 20240521202120.png]]
 
 
-Loo
+Look at the intervals e.g. when x is between 0 to 0.2 : $x=0  ; 0.2$ then $p(x)=0.6$ 
+when $x=0.2;0.6$, $p(x)=1$ and when $x=0.6;0.9$ then $p(x) = 1.6$
+
+To get the area under we calculate the integrals, i did it in maple:
+
+$$
+\int_{0}^{0.2} 0.6x \, dx + \int_{0.2}^{0.6} x \, dx + \int_{0.6}^{0.9} 1.6x \, dx = 0.5320000000
+$$

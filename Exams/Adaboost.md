@@ -73,3 +73,80 @@ print(f"Normalization factor: {normalization_factor:.3f}")
 print(f"The updated weights for classifed observations based on Adaboost is: {updated_weight_correct:.3f}")  
 print(f"The updated weights for misclassifed observations based on Adaboost is: {updated_weight_misclassified:.3f}")
 ```
+
+---
+## S20, 27)
+
+
+
+We need to use AdaBoost to classify two test observations $\mathbf{x}_{\text{test1}}$ and $\mathbf{x}_{\text{test2}}$ using a 1-NN classifier over four rounds of boosting. The question provides the predictions of the AdaBoost classifiers and the weighted error rates $\epsilon_t$ for each round.
+
+Here's a step-by-step guide to solve the problem:
+
+1. **Understanding AdaBoost**:
+   - AdaBoost combines weak classifiers to form a strong classifier.
+   - For each round $t$, the weak classifier’s prediction and its weighted error rate $\epsilon_t$ are provided.
+   - The final prediction is a weighted majority vote of the weak classifiers’ predictions.
+
+2. **Calculation Details**:
+   - The weight for each classifier is calculated using:
+     $$
+     \alpha_t = \frac{1}{2} \log\left(\frac{1 - \epsilon_t}{\epsilon_t}\right)
+     $$
+   - The final prediction is made by summing the weighted predictions and applying the sign function.
+
+### Steps to Solve the Problem:
+1. **Extract Predictions and Error Rates**:
+   - From Table 6 in the exam, extract the predictions for each test observation for the 4 rounds and the corresponding error rates.
+
+2. **Calculate Classifier Weights**:
+   - Compute $\alpha_t$ for each round using the given error rates.
+
+3. **Aggregate Weighted Predictions**:
+   - Sum the weighted predictions for each test observation.
+   - Apply the sign function to determine the final class.
+
+### Example Calculation
+
+Given:
+- Predictions for $\mathbf{x}_{\text{test1}}$: $0, 1, 0, 0$
+- Predictions for $\mathbf{x}_{\text{test2}}$: $0, 1, 1, 1$
+- Error rates $\epsilon_t$: $0.417, 0.243, 0.307, 0.534$
+
+```python
+import numpy as np  
+  
+  
+def adaboost_classification(predictions, error_rates):  
+    # Calculate classifier weights  
+    alphas = 0.5 * np.log((1 - np.array(error_rates)) / np.array(error_rates))  
+  
+    # Compute weighted sum of predictions for each test observation  
+    weighted_sums = np.dot(predictions, alphas)  
+  
+    # Final prediction is the sign of the weighted sum  
+    final_predictions = np.sign(weighted_sums)  
+  
+    # Convert from -1, 1 to 0, 1  
+    final_predictions = (final_predictions + 1) // 2  
+    return final_predictions  
+  
+  
+# Predictions for each test observation  
+predictions_test1 = [0, 1, 0, 0]  
+predictions_test2 = [0, 1, 1, 1]  
+  
+# Convert 0/1 predictions to -1/1 for consistency with AdaBoost  
+predictions_test1 = np.array(predictions_test1) * 2 - 1  
+predictions_test2 = np.array(predictions_test2) * 2 - 1  
+  
+# Error rates for each round  
+error_rates = [0.417, 0.243, 0.307, 0.534]  
+  
+# Calculate final predictions  
+final_pred_test1 = adaboost_classification(predictions_test1, error_rates)  
+final_pred_test2 = adaboost_classification(predictions_test2, error_rates)  
+  
+print(f"Final prediction for x_test1: {final_pred_test1}")  
+print(f"Final prediction for x_test2: {final_pred_test2}")
+```

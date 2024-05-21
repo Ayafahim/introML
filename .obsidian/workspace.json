@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Density function.md",
+                "file": "Exams/Adaboost.md",
                 "mode": "source",
                 "source": false
               }
@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "s23",
+                "query": "s20, Q25",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Density function.md",
+                "file": "Exams/Adaboost.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Density function.md",
+                "file": "Exams/Adaboost.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Density function.md"
+                "file": "Exams/Adaboost.md"
               }
             }
           }
@@ -184,27 +184,27 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
-    "Pasted image 20240521202120.png",
-    "Exams/Mahanolobis Distance.md",
-    "Exams/Density function.md",
-    "Pasted image 20240521201926.png",
-    "Exams/Clustering & Dendograms.md",
-    "Pasted image 20240521201646.png",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
-    "Pasted image 20240521200828.png",
-    "Pasted image 20240521200821.png",
+    "Exams/Theory questions.md",
+    "Pasted image 20240521203102.png",
     "Exams/Cross validation.md",
-    "Pasted image 20240521200257.png",
+    "images/Pasted image 20240521152638.png",
+    "Exams/Density function.md",
+    "images/Pasted image 20240521202120.png",
+    "Exams/Mahanolobis Distance.md",
+    "images/Pasted image 20240521201926.png",
+    "Exams/Clustering & Dendograms.md",
+    "images/Pasted image 20240521201646.png",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "images/Pasted image 20240521200828.png",
+    "images/Pasted image 20240521200821.png",
+    "images/Pasted image 20240521200257.png",
     "Exams/PCA Problems.md",
-    "Pasted image 20240521195641.png",
+    "images/Pasted image 20240521195641.png",
     "Exams/KDE.md",
-    "Pasted image 20240521194246.png",
-    "Pasted image 20240521194243.png",
+    "images/Pasted image 20240521194246.png",
     "Exams/Forward - backwards selection.md",
-    "Pasted image 20240521193319.png",
     "Exams/GMM.md",
     "[.md",
-    "Pasted image 20240521190044.png",
     "Exams/Binary tables.md",
     "Exams/Adaboost.md",
     "Exams/paired test.md",
@@ -213,7 +213,6 @@
     "Exams/ANN.md",
     "Exams/Regression model.md",
     "Exams/Logistic Regression.md",
-    "Exams/Theory questions.md",
     "Chapters/Cluster Approaches.md",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Chapters/8) Classification & regression.md",
