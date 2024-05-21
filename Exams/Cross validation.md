@@ -270,3 +270,29 @@ error_rate_2 = 1 - evaluate_knn(outer_train_2, outer_test_2, best_k_2)
 print(f"Error rate for outer fold 1: {error_rate_1}")
 print(f"Error rate for outer fold 2: {error_rate_2}")
 ```
+---
+## S23, Q17) Suppose a neural network is trained to classify sounds. As part of training the network, we wish to select between eight different ways to transform the attributes (i.e., S = 8 models) and estimate the generalization error of the optimal choice. In the outer loop we opt for K1 = 3-fold cross-validation, and in the inner K2 = 5-fold cross-validation. The time taken to train a single model is 20 minutes, and this can be assumed constant for each fold. If the time taken to test a model is negligible, what is the total time required for the 2-level cross-validation procedure?
+
+## Script
+
+```python
+def calculate_total_training_time(S, K2, K1, single_model_time):  
+    # Calculate the total number of models  
+    total_models = K1 * (K2 * S + 1)  
+  
+    # Calculate total training time  
+    total_training_time = total_models * single_model_time  
+  
+    return total_training_time  
+  
+  
+# Given values  
+S = 8  
+K2 = 5  
+K1 = 3  
+Train_single_model_time = 20  
+  
+# Calculate total training time  
+total_time = calculate_total_training_time(S, K2, K1, Train_single_model_time)  
+print(f"The total training time for all models is {total_time} minutes.")
+```

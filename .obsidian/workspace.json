@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Cross validation.md",
+                "file": "Exams/F21.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Cross validation.md",
+                "file": "Exams/F21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Cross validation.md",
+                "file": "Exams/F21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Cross validation.md"
+                "file": "Exams/F21.md"
               }
             }
           }
@@ -196,6 +196,18 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
+    "Exams/PCA Problems.md",
+    "Exams/S18.md",
+    "Exams/Adaboost.md",
+    "Pasted image 20240521031659.png",
+    "Exams/Binary tables.md",
+    "Exams/Cross validation.md",
+    "Exams/Logistic Regression.md",
+    "Exams/Linear regression model.md",
+    "Exams/Classifier Trees.md",
+    "Pasted image 20240521025237.png",
+    "Pasted image 20240521025217.png",
+    "Pasted image 20240521025142.png",
     "Exams/S16.md",
     "Exams/Covariance.md",
     "Exams/GMM.md",
@@ -211,26 +223,15 @@
     "Pasted image 20240521005851.png",
     "Exams/Histograms and boxplots.md",
     "Exams/KNN.md",
-    "Exams/Adaboost.md",
     "Exams/Dendograms and clusters.md",
-    "Pasted image 20240521005200.png",
-    "Pasted image 20240521004150.png",
-    "Pasted image 20240521003452.png",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
-    "Pasted image 20240520221015.png",
-    "Exams/Linear regression model.md",
-    "Exams/Cross validation.md",
-    "Exams/Binary tables.md",
     "Exams/ANN.md",
-    "Exams/Logistic Regression.md",
     "Glossary & interperetations.md",
     "Intro to ML/Machine Learning Tasks and Concepts.md",
-    "Exams/PCA Problems.md",
     "Exams/K-means algorithm.md",
     "Chapters/PCA.md",
     "Exams/Dendograms.md",
     "Exams/Cross-validation.md",
-    "Chapters/Data and Attribute Types.md",
     "Chapters",
     "Exams",
     "images",
