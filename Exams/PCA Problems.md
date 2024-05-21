@@ -597,3 +597,7 @@ for the V do the same but remember the row should be equal to 1:
 solve(1 = (-0.5939)^2 + 0.2906^2 + 0.0621^2 + 0.6652^2 + x^2, x)
 ```
 
+---
+## S20, Q4) Projection on to components
+
+![[Pasted image 20240521195641.png]]

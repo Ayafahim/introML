@@ -407,3 +407,11 @@ print(f"SMC: {SMC}")
 print(f"Jaccard coefficient: {jaccard}")  
 print(f"Total pairs (K): {K}, f00: {f00}, f11: {f11}")
 ```
+
+---
+
+## S20, Q22)We assign the green observation to one of the three cluster by considering the proximity measure as computed based on Euclidean distance between the green point, and the points in the cluster. Which one of the following statements is correct?
+
+![[Pasted image 20240521201646.png]]
+
+The correct answer is A. Minimum linkage will result in the new observation assigned to red  crosses as the closest most observation is a red cross. Maximum linkage will assign the new observation to the blue plusses according to the furthest most observation of each cluster having a blue plus as closest to the new observation. Average linkage corresponds to considering the avarege distance and can be considered a center based approach. Here the center of the red crosses are furthest away and therefore this cannot be the cluster the new observation is assigned to. 

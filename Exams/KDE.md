@@ -234,3 +234,133 @@ find the plot that matchs that point (2,4), it is plot 1.
 ---
 ## S23, Q27) Determine which value of λ in Figure 15 results in  $L = [−2.3 −2.3 −13.91]$.
 
+![[Pasted image 20240521194243.png]]
+![[Pasted image 20240521194246.png]]
+
+
+### Breakdown
+
+#### Problem Statement
+
+A small 1-dimensional dataset with $N = 3$ observations has been subsampled from the Sound Classification dataset:
+
+$$
+X = \begin{bmatrix} -0.82 \\ 0.0 \\ 2.5 \end{bmatrix}
+$$
+
+A kernel density estimator (KDE) has been fitted to the small dataset with different $\lambda$ using the standard Gaussian kernel. We need to determine which value of $\lambda$ results in the test log likelihood $L$ values:
+
+$$
+L = \begin{bmatrix} -2.3 & -2.3 & -13.91 \end{bmatrix}
+$$
+
+The possible $\lambda$ values are (seen on the graphs):
+- $\lambda = 1.15$
+- $\lambda = 0.15$
+- $\lambda = 0.21$
+- $\lambda = 0.49$
+
+#### Solution Explanation
+
+The correct answer is $\lambda = 0.49$. To determine this, we perform a leave-one-out (LOO) procedure for computing the generalization error for different $\lambda$ values.
+
+### Detailed Steps
+
+1. **Leave-One-Out (LOO) Procedure**:
+   - For each observation $x_i$, remove $x_i$ from the dataset and estimate the density at $x_i$ using the remaining $N-1$ observations.
+   - The test log likelihood for the whole dataset is defined as:
+
+   $$
+   L(\lambda) = \frac{1}{N} \sum_{i=1}^{N} \log \left( \sum_{j \neq i} \frac{1}{N-1} \cdot \mathcal{N}(x_i | x_j, \lambda^2) \right)
+   $$
+
+2. **Kernel Density Estimation (KDE)**:
+   - The KDE is calculated for different values of $\lambda$, and the log likelihood is evaluated for each $x_i$.
+
+3. **Log Likelihood Calculation**:
+   - For each $\lambda$, the individual log likelihoods $L_i$ are computed for each observation.
+   - The values of $\lambda$ that best fit the log likelihood values given are determined.
+
+4. **Choosing the Correct $\lambda$**:
+   - Compare the computed log likelihood values for each $\lambda$ with the given log likelihoods $[-2.3, -2.3, -13.91]$.
+
+### Example Calculation for $\lambda = 0.49$
+
+Given the dataset $X = \begin{bmatrix} -0.82 \\ 0.0 \\ 2.5 \end{bmatrix}$, we perform the LOO procedure and calculate the log likelihoods for $\lambda = 0.49$.
+
+- **Step 1**: Remove $x_1 = -0.82$
+  - KDE using $x_2 = 0.0$ and $x_3 = 2.5$
+  - Calculate $p(x_1)$ and the log likelihood.
+
+- **Step 2**: Remove $x_2 = 0.0$
+  - KDE using $x_1 = -0.82$ and $x_3 = 2.5$
+  - Calculate $p(x_2)$ and the log likelihood.
+
+- **Step 3**: Remove $x_3 = 2.5$
+  - KDE using $x_1 = -0.82$ and $x_2 = 0.0$
+  - Calculate $p(x_3)$ and the log likelihood.
+
+By evaluating the above steps, the KDE with $\lambda = 0.49$ results in the log likelihood values $[-2.3, -2.3, -13.91]$, matching the given values.
+
+### Conclusion
+
+The value of $\lambda$ that results in the log likelihood values $[-2.3, -2.3, -13.91]$ is $\lambda = 0.49$.
+
+#### Answer
+
+$$
+\boxed{\text{D. } \lambda = 0.49}
+$$
+
+This approach ensures a thorough understanding of the leave-one-out procedure and kernel density estimation, providing accurate determination of the correct $\lambda$ value.
+
+
+```python
+import numpy as np  
+from scipy.stats import norm  
+  
+# Dataset  
+X = np.array([-0.82, 0.0, 2.5])  
+N = len(X)  
+  
+# Given log likelihood values  
+given_log_likelihoods = np.array([-2.3, -2.3, -13.91])  
+  
+# KDE with different lambda values  
+lambdas = [1.15, 0.15, 0.21, 0.49]  
+log_likelihoods = {lam: [] for lam in lambdas}  
+  
+# Leave-One-Out procedure  
+for lam in lambdas:  
+    loo_log_likelihood = []  
+    print(f"\nCalculating for lambda = {lam}")  
+    for i in range(N):  
+        # Leave one out  
+        X_train = np.delete(X, i)  
+        x_i = X[i]  
+  
+        # KDE estimation for x_i  
+        p_xi_values = [norm.pdf(x_i, loc=x_j, scale=lam) for x_j in X_train]  
+        p_xi = np.mean(p_xi_values)  
+        loo_log_likelihood.append(np.log(p_xi))  
+  
+        # Debugging output  
+        print(f"Left out {x_i}: KDE values = {p_xi_values}, p(x_i) = {p_xi}, log(p(x_i)) = {np.log(p_xi)}")  
+  
+    log_likelihoods[lam] = loo_log_likelihood  
+  
+print("\nLog Likelihoods for different lambdas:")  
+for lam, ll in log_likelihoods.items():  
+    print(f"lambda = {lam}: {ll}")  
+  
+  
+# Compare each lambda's log likelihoods with the given log likelihoods  
+def total_difference(log_likelihoods, given_log_likelihoods):  
+    return np.sum(np.abs(np.array(log_likelihoods) - given_log_likelihoods))  
+  
+  
+best_lambda = min(lambdas, key=lambda lam: total_difference(log_likelihoods[lam], given_log_likelihoods))  
+  
+print(f"\nThe best lambda is {best_lambda}")
+```
+

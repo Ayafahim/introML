@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/KDE.md",
+                "file": "Exams/Density function.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/KDE.md",
+                "file": "Exams/Density function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/KDE.md",
+                "file": "Exams/Density function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/KDE.md"
+                "file": "Exams/Density function.md"
               }
             }
           }
@@ -184,6 +184,22 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
+    "Pasted image 20240521202120.png",
+    "Exams/Mahanolobis Distance.md",
+    "Exams/Density function.md",
+    "Pasted image 20240521201926.png",
+    "Exams/Clustering & Dendograms.md",
+    "Pasted image 20240521201646.png",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Pasted image 20240521200828.png",
+    "Pasted image 20240521200821.png",
+    "Exams/Cross validation.md",
+    "Pasted image 20240521200257.png",
+    "Exams/PCA Problems.md",
+    "Pasted image 20240521195641.png",
+    "Exams/KDE.md",
+    "Pasted image 20240521194246.png",
+    "Pasted image 20240521194243.png",
     "Exams/Forward - backwards selection.md",
     "Pasted image 20240521193319.png",
     "Exams/GMM.md",
@@ -192,34 +208,18 @@
     "Exams/Binary tables.md",
     "Exams/Adaboost.md",
     "Exams/paired test.md",
-    "Pasted image 20240521182338.png",
     "Exams/Market basket Problem.md",
-    "Pasted image 20240521181359.png",
     "Exams/ROC & AUC.md",
     "Exams/ANN.md",
-    "Pasted image 20240521175045.png",
-    "Pasted image 20240521175042.png",
     "Exams/Regression model.md",
-    "Pasted image 20240521173634.png",
     "Exams/Logistic Regression.md",
     "Exams/Theory questions.md",
-    "Pasted image 20240521162147.png",
     "Chapters/Cluster Approaches.md",
-    "Pasted image 20240521162045.png",
     "Chapters/Summary Statistics and Measures of Similarity.md",
     "Chapters/8) Classification & regression.md",
-    "Exams/Cross validation.md",
-    "Pasted image 20240521160937.png",
     "Exams/F21.md",
     "Exams/Classifier Matching.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/K-means algorithm.md",
-    "Exams/Covariance.md",
-    "Exams/Confusion Matrix.md",
-    "Exams/Compare Jaccard, SMC etc..md",
-    "Exams/Dendograms and clusters.md",
-    "Exams/KDE.md",
-    "Glossary & interperetations.md",
     "Chapters",
     "Exams",
     "images",

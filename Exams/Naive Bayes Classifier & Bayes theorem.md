@@ -265,3 +265,56 @@ print(classification)
 ## F17, Q14) 
 
 ![[Pasted image 20240521155654.png]]
+
+---
+## S20, Q16)
+
+![[Pasted image 20240521200828.png]]
+![[Pasted image 20240521200821.png]]
+
+
+```python 
+
+import numpy as np  
+  
+  
+def calculate_probability(table, alpha=1):  
+    # Convert the table to a numpy array for easy manipulation  
+    data = np.array(table)  
+  
+    # Extract the relevant columns  
+    f2 = data[:, 1]  
+    f3 = data[:, 2]  
+    yb = data[:, -1]  
+  
+    # Calculate occurrences  
+    occurrences_y1 = np.sum(yb == 1)  
+    occurrences_f2_1_f3_1_y1 = np.sum((f2 == 1) & (f3 == 1) & (yb == 1))  
+  
+    # Calculate the probability using the given formula  
+    probability = (occurrences_f2_1_f3_1_y1 + alpha) / (occurrences_y1 + 2 * alpha)  
+  
+    return probability  
+  
+  
+# Example table data: Each row is [f1, f2, f3, f4, f5, yb]
+# yb is determined by the class color black = 1 and red = 0 in this case
+table = [  
+    [1, 1, 1, 0, 0, 0],  
+    [1, 1, 1, 0, 0, 0],  
+    [1, 1, 1, 0, 0, 0],  
+    [1, 1, 1, 0, 0, 0],  
+    [1, 1, 1, 0, 0, 0],  
+    [0, 1, 1, 0, 0, 0],  
+    [0, 1, 0, 1, 1, 0],  
+    [1, 1, 1, 0, 0, 0],  
+    [1, 0, 1, 0, 0, 1],  
+    [0, 0, 0, 1, 1, 1],  
+    [0, 1, 0, 1, 1, 1]  
+]  
+  
+# Calculate the probability  
+prob = calculate_probability(table, alpha=1)  
+print(f"The estimated probability is: {prob}")
+
+```

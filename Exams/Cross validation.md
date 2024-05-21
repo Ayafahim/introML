@@ -312,3 +312,11 @@ print(f"The total training time for all models is {total_time} minutes.")
 ## F17, Q24) Ridge regression from previous question
 
 ![[Pasted image 20240521160937.png]]
+
+
+---
+## S20, Q13) Suppose a neural network is trained to predict GNP. As part of training the network, we wish to select between three different model architectures respectively with 5, 10 and 20 hidden units and estimate the generalization error of the optimal choice. In the outer loop we opt for K1 = 4-fold cross-validation, and in the inner K2 = 7-fold cross-validation. The time taken to train a single model is 20 seconds, and this can be assumed constant for each fold. If the time taken to test a model is 1 second what is then the total time required to complete the 2-level cross-validation procedure?
+
+
+![[Pasted image 20240521200257.png]]
+
