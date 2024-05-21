@@ -31,4 +31,14 @@ Svaret for denne opgave A
 
 ---
 
-## S19, Q1
+## S19, Q1 ) The main dataset used in this exam is the travel review dataset1 described in Table 1. In Figure 1 is shown a scatter plot of the two attributes x2 and x9 from the travel review dataset and in Figure 2 boxplots of the attributes x2, x7, x8, x9 (not in that order). Which one of the following statements is true?
+
+![[Pasted image 20240521124006.png]]
+
+## solution
+D. Attribute x2 corresponds to boxplot 2 and x9 corresponds to boxplot 1. Honestly just look at where the data goes you can see that for boxplot 2 the data is very spread but also that it stretches all the way from 0 - 3 and then one outlier after 3.5 on the x-axis, which matches boxblot 2. Also notice the median is around same place as half of the data in the scatter plot on x-axis. Same goes for y-axis
+
+Again look at where data reaches. The y-axis its from around 2.2-3.6, boxplot 1 is the only one that matches that.
+
+
+
