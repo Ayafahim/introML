@@ -16,3 +16,13 @@
 
 ![[Pasted image 20240520220421.png]]
 
+---
+## F23, Q25) #Apriori #associationMining
+
+![[Pasted image 20240521015004.png]]
+![[Pasted image 20240521015057.png]]
+
+---
+
+![[Pasted image 20240521015126.png]]
+

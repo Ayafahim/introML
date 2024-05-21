@@ -40,7 +40,6 @@
 - Since the problem asks for the total number of models trained for both methods, the correct number is \(208\).
 
 ### Correct Answer:
-\[ \boxed{208 \text{ models}} \]
 Therefore, the correct choice is **A. 208 models**.
 
 ### Summary of Solution:
