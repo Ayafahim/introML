@@ -103,3 +103,79 @@ print("Statement D", statement_d)
 # print("Statement C", statement_c)  
 # print("Statement D", statement_d)
 ```
+
+
+---
+
+## S22, Q9)What are the possible range of values of the Jaccard similarities of $x_1$  and $x_2$ ?
+![[Pasted image 20240521215524.png]]
+
+
+To solve Question 9 regarding the range of possible values of the Jaccard similarities for two binary vectors $x_1$ and $x_2$ with dimensions $N = 465$, where $x_1$ has one non-zero element and $x_2$ has 464 non-zero elements, we need to understand how the Jaccard similarity is calculated.
+
+The Jaccard similarity between two binary vectors $x_1$ and $x_2$ is defined as:
+
+$$ J(x_1, x_2) = \frac{|x_1 \cap x_2|}{|x_1 \cup x_2|} $$
+
+Where:
+- $|x_1 \cap x_2|$ is the number of positions where both vectors have a 1.
+- $|x_1 \cup x_2|$ is the number of positions where at least one of the vectors has a 1.
+
+Given the vectors:
+- $x_1$ has one non-zero element.
+- $x_2$ has 464 non-zero elements.
+
+### Calculation:
+
+1. **Intersection $|x_1 \cap x_2|$**:
+   - The maximum possible value for the intersection is 1 (if the one non-zero element of $x_1$ is one of the 464 non-zero elements of $x_2$).
+   - The minimum possible value for the intersection is 0 (if the one non-zero element of $x_1$ is not among the 464 non-zero elements of $x_2$).
+
+2. **Union $|x_1 \cup x_2|$**:
+   - Since $x_1$ has one non-zero element and $x_2$ has 464 non-zero elements, the total number of unique non-zero positions in the union is either 464 or 465:
+     - If the one non-zero element of $x_1$ is one of the 464 non-zero elements of $x_2$, then $|x_1 \cup x_2| = 464$.
+     - If the one non-zero element of $x_1$ is not among the 464 non-zero elements of $x_2$, then $|x_1 \cup x_2| = 465$.
+
+### Jaccard Similarity Range:
+
+- **Maximum Jaccard Similarity**:
+  $$ J_{\text{max}} = \frac{1}{464} \approx 0.00216 $$
+
+- **Minimum Jaccard Similarity**:
+  $$ J_{\text{min}} = \frac{0}{465} = 0 $$
+
+Thus, the range of the Jaccard similarity values is:
+
+$$ J(x_1, x_2) \in [0, 0.00216] $$
+
+The correct answer is:
+
+$$ \boxed{C. J(x_1, x_2) \in [0; 0.00216]} $$
+
+```python
+def jaccard_similarity(x1, x2):
+    """
+    Calculate the Jaccard similarity between two binary vectors x1 and x2.
+    """
+    intersection = sum([1 for i, j in zip(x1, x2) if i == j == 1])
+    union = sum([1 for i, j in zip(x1, x2) if i == 1 or j == 1])
+    return intersection / union
+
+# Define the binary vectors
+N = 465
+x1 = [0] * N
+x2 = [1] * N
+
+# Place one non-zero element in x1
+x1[0] = 1
+
+# Calculate Jaccard similarity when the non-zero element in x1 is also in x2 (maximum intersection)
+jaccard_max = jaccard_similarity(x1, x2)
+
+# Calculate Jaccard similarity when the non-zero element in x1 is not in x2 (minimum intersection)
+x2[0] = 0  # Move the non-zero element of x1 out of the 464 non-zero elements of x2
+jaccard_min = jaccard_similarity(x1, x2)
+
+print(f"Jaccard similarity range: [{jaccard_min:.5f}, {jaccard_max:.5f}]")
+
+```
