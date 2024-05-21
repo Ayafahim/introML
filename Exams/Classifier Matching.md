@@ -29,3 +29,7 @@ Remember if there is a tie it is assigned to the closest one.
 ## F16, Q5)
 
 ![[Pasted image 20240521145617.png]]
+
+---
+# F17, Q15)
+![[Pasted image 20240521155743.png]]

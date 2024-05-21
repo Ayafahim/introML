@@ -36,3 +36,17 @@ Cross-validation can trivially be used to quantify the number of hidden units in
 ## F16, 27) Which of the following statements regarding ensemble methods is correct?
 
 ![[Pasted image 20240521153808.png]]
+
+---
+
+## F17, Q17) #crossvalidation 
+
+![[Pasted image 20240521155842.png]]
+
+---
+## F17, Q26)
+
+![[Pasted image 20240521162147.png]]
+
+
+Multinomial regression is a generalization of two class logistic regression to handle multiple classes. Decision trees do not return probabilities of being in each class but hard assigns observations to the classes based on majority voting in each terminal leaf. K-means, Gaussian Mixture Models and Artificial Neural Networks (ANN) are indeed all prone to local minima and it is therefore advised to use multiple restarts selecting the initialization with best soution. Accuracy is not a good performance measure when facing severe class-imbalance issues as we may trivially obtain a very high accuracy simply by classifying by chance. The AUC of the receiver operator characteristic would here be more appropriate as it is not influenced by the relative sizes of the two classes.

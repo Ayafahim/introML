@@ -260,3 +260,8 @@ print(classification)
 ![[Pasted image 20240521151538.png]]
 
 ![[Pasted image 20240521151458.png]]
+
+---
+## F17, Q14) 
+
+![[Pasted image 20240521155654.png]]

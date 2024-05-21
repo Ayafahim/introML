@@ -301,3 +301,14 @@ print(f"The total training time for all models is {total_time} minutes.")
 ## F16, Q24) We will consider a very large dataset with 100 mio. observations and ten features, i.e. N = 100.000.000 and M = 10. We would like to perform two-level cross-validation in order to select between 3 different settings of the parameters of a model (inner fold) and estimate the generalization error (outer fold). We are only allowed to train maximally 65 models in total. Which one of the following procedures satisfies this constraint?
 
 ![[Pasted image 20240521153214.png]]
+
+---
+## F17, Q23)
+
+![[Pasted image 20240521160832.png]]
+
+![[Pasted image 20240521160901.png]]
+
+## F17, Q24) Ridge regression from previous question
+
+![[Pasted image 20240521160937.png]]

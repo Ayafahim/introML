@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Theory questions.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Theory questions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/K-means algorithm.md",
+                "file": "Exams/Theory questions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/K-means algorithm.md"
+                "file": "Exams/Theory questions.md"
               }
             }
           }
@@ -184,42 +184,42 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
-    "Exams/Theory questions.md",
-    "Pasted image 20240521153808.png",
-    "Pasted image 20240521153638.png",
-    "Exams/Adaboost.md",
-    "Pasted image 20240521153409.png",
-    "Pasted image 20240521153406.png",
+    "Pasted image 20240521162147.png",
+    "Chapters/Cluster Approaches.md",
+    "Pasted image 20240521162045.png",
+    "Chapters/Summary Statistics and Measures of Similarity.md",
+    "Chapters/8) Classification & regression.md",
     "Exams/Cross validation.md",
-    "Pasted image 20240521153214.png",
+    "Pasted image 20240521160937.png",
+    "Pasted image 20240521160901.png",
+    "Pasted image 20240521160832.png",
+    "Exams/F21.md",
+    "Exams/Binary tables.md",
+    "Pasted image 20240521160515.png",
+    "Pasted image 20240521160512.png",
+    "Exams/Classifier Matching.md",
+    "Exams/Theory questions.md",
+    "Pasted image 20240521155842.png",
+    "Pasted image 20240521155743.png",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Pasted image 20240521155654.png",
+    "Exams/GMM.md",
+    "Pasted image 20240521155222.png",
+    "Exams/ROC.md",
+    "Exams/K-means algorithm.md",
+    "Exams/Adaboost.md",
     "Exams/Covariance.md",
-    "Pasted image 20240521152915.png",
-    "Pasted image 20240521152851.png",
     "Exams/Confusion Matrix.md",
     "Exams/Compare Jaccard, SMC etc..md",
-    "Exams/GMM.md",
     "Exams/ANN.md",
-    "Pasted image 20240521152642.png",
-    "Pasted image 20240521152638.png",
     "Exams/Dendograms and clusters.md",
     "Exams/KDE.md",
-    "images/Pasted image 20240520214908.png",
     "Glossary & interperetations.md",
     "Exams/Classifier Trees.md",
-    "Exams/ROC.md",
     "Exams/S16.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/PCA Problems.md",
     "Chapters/PCA.md",
     "Exams/Regression model.md",
-    "Exams/Untitled.md",
-    "Exams/S18.md",
-    "Exams/F21.md",
-    "Exams/K-means algorithm.md",
-    "Exams/Binary tables.md",
-    "Exams/Hunts Algorithm.md",
-    "Exams/Classifier Matching.md",
-    "Exams/Forward - backwards selection.md",
     "Chapters",
     "Exams",
     "images",
