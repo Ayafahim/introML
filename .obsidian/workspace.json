@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Classifier Trees.md",
+                "file": "Exams/K-means algorithm.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,18 +38,6 @@
               "type": "markdown",
               "state": {
                 "file": "Exams/F21.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b2e3abc01f98603",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Glossary & interperetations.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "f17",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Classifier Trees.md",
+                "file": "Exams/K-means algorithm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Classifier Trees.md",
+                "file": "Exams/K-means algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Classifier Trees.md"
+                "file": "Exams/K-means algorithm.md"
               }
             }
           }
@@ -196,42 +184,42 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
-    "Pasted image 20240521143904.png",
-    "Pasted image 20240521143859.png",
+    "Exams/Theory questions.md",
+    "Pasted image 20240521153808.png",
+    "Pasted image 20240521153638.png",
+    "Exams/Adaboost.md",
+    "Pasted image 20240521153409.png",
+    "Pasted image 20240521153406.png",
+    "Exams/Cross validation.md",
+    "Pasted image 20240521153214.png",
+    "Exams/Covariance.md",
+    "Pasted image 20240521152915.png",
+    "Pasted image 20240521152851.png",
+    "Exams/Confusion Matrix.md",
+    "Exams/Compare Jaccard, SMC etc..md",
+    "Exams/GMM.md",
+    "Exams/ANN.md",
+    "Pasted image 20240521152642.png",
+    "Pasted image 20240521152638.png",
+    "Exams/Dendograms and clusters.md",
+    "Exams/KDE.md",
+    "images/Pasted image 20240520214908.png",
+    "Glossary & interperetations.md",
+    "Exams/Classifier Trees.md",
+    "Exams/ROC.md",
+    "Exams/S16.md",
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
+    "Exams/PCA Problems.md",
+    "Chapters/PCA.md",
+    "Exams/Regression model.md",
+    "Exams/Untitled.md",
+    "Exams/S18.md",
+    "Exams/F21.md",
+    "Exams/K-means algorithm.md",
+    "Exams/Binary tables.md",
+    "Exams/Hunts Algorithm.md",
     "Exams/Classifier Matching.md",
     "Exams/Forward - backwards selection.md",
-    "Pasted image 20240521133131.png",
-    "Pasted image 20240521133126.png",
-    "Exams/PCA Problems.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
-    "Chapters/PCA.md",
-    "Pasted image 20240521132749.png",
-    "Exams/ROC.md",
-    "Exams/Regression model.md",
-    "Pasted image 20240521130800.png",
-    "Pasted image 20240521130727.png",
-    "Exams/Logistic Regression.md",
-    "Exams/Hunts Algorithm.md",
-    "Exams/KNN.md",
-    "Exams/Histograms and boxplots.md",
-    "Pasted image 20240521124006.png",
-    "Exams/ANN.md",
-    "Exams/Binary tables.md",
-    "Exams/Covariance.md",
-    "Exams/F21.md",
-    "Exams/S18.md",
-    "Exams/Adaboost.md",
-    "Pasted image 20240521031659.png",
-    "Exams/Cross validation.md",
-    "Exams/Classifier Trees.md",
-    "Pasted image 20240521025237.png",
-    "Pasted image 20240521025217.png",
-    "Exams/S16.md",
-    "Exams/GMM.md",
-    "Exams/Theory questions.md",
-    "Exams/KDE.md",
-    "Exams/Dendograms and clusters.md",
-    "Glossary & interperetations.md",
     "Chapters",
     "Exams",
     "images",

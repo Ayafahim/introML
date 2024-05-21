@@ -128,7 +128,7 @@ When interpreting projections:
   - If the coefficient of $x$ in $V$ is positive, a high value will contribute positively.
   - If the coefficient is negative, a high value will contribute negatively.
 
-### Table Overview #Gold
+### Table Overview
 
 | Condition  | Coefficient Sign | Contribution to PC |
 | ---------- | ---------------- | ------------------ |

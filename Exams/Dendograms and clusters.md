@@ -339,3 +339,71 @@ plt.ylabel('Distance')
 plt.show()
 ```
 
+---
+
+## F16, Q8) What is the above SMC between the true labeling of the observations into the three classes Kama, Rosa, and Canadian, and the clustering defined by thresholding Dendrogam 4 at the level of three clusters?
+
+![[Pasted image 20240521150418.png]]
+
+Script has been modified for other exam sets but  can be used for this question. 
+
+```python
+import numpy as np  # type: ignore  
+  
+# TODO: Assuming these cluster assignments from the dendrogram  
+clusters = {  
+    'cluster1': [7, 8, 9, 3],   
+'cluster2': [1, 2],  
+    'cluster3': [5, 4, 6]  
+}  
+  
+clusters_s17 = {  
+    'cluster1': [2, 3, 4, 6, 8],  
+    'cluster2': [1, 5, 7]  
+}  
+  
+# True class labels as per your description  
+# TODO: look what class they are defined as:  
+class_labels = {  
+    1: 'K', 2: 'K', 3: 'K',    
+4: 'R', 5: 'R', 6: 'R',    
+7: 'C', 8: 'C', 9: 'C'  }  
+  
+class_labels_s17 = {  
+    1: 'L', 2: 'L', 3: 'L',  
+    4: 'L', 5: 'H', 6: 'H',  
+    7: 'H', 8: 'L'  
+}  
+  
+  
+# Function to calculate f00 and f11  
+def calculate_f00_f11(clusters, labels):  
+    f00, f11 = 0, 0  
+    all_observations = list(labels.keys())  
+    K = len(all_observations) * (len(all_observations) - 1) // 2  
+    for i in range(len(all_observations)):  
+        for j in range(i + 1, len(all_observations)):  
+            same_cluster = any(  
+                all_observations[i] in clusters[cluster] and all_observations[j] in clusters[cluster] for cluster in  
+                clusters)  
+            same_class = labels[all_observations[i]] == labels[all_observations[j]]  
+            if same_cluster and same_class:  
+                f11 += 1  
+            if not same_cluster and not same_class:  
+                f00 += 1  
+    return f00, f11, K  
+  
+  
+# Calculate f00, f11, and K  
+f00, f11, K = calculate_f00_f11(clusters_s17, class_labels_s17)  
+  
+# Calculate SMC  
+SMC = (f00 + f11) / K  
+  
+# Calculate Jaccard coefficient  
+jaccard = f11 / (K - f00)  
+  
+print(f"SMC: {SMC}")  
+print(f"Jaccard coefficient: {jaccard}")  
+print(f"Total pairs (K): {K}, f00: {f00}, f11: {f11}")
+```

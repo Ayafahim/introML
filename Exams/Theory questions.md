@@ -26,3 +26,13 @@
 
 ![[Pasted image 20240521015126.png]]
 
+---
+## F16, 26) For which of the following purposes is cross-validation the least well suited? #crossvalidation
+![[Pasted image 20240521153638.png]]
+
+Cross-validation can trivially be used to quantify the number of hidden units in ANN and nearest neighbors in KNN classification by evaluating the performance predicting the output in these supervised learning problems. As we have seen in the course crossvalidation can also be used to quantify the width of the kernel density estimator. Cross-validation is used to quantify models generalization through the use of the test sets and not to minimize the training error.
+
+---
+## F16, 27) Which of the following statements regarding ensemble methods is correct?
+
+![[Pasted image 20240521153808.png]]

@@ -24,3 +24,8 @@ For KNN the boundaries can be quite jagged, reflecting the local structure of th
 A point to the left of the figure must clearly be assigned to class 2 because of the two triangles. A point furthest to the right will have three different classes in its K = 3 nearest neighborhood and the tie is broken by assigning it to class 2 as well. The rules out all options except A and B. These differ only in the assignment of a point near the left-most blue square, but a point here will have two yellow circles inits K = 3 neighborhood and therefore belong to class 3. This rules out all options except D.
 
 Remember if there is a tie it is assigned to the closest one.
+
+--- 
+## F16, Q5)
+
+![[Pasted image 20240521145617.png]]

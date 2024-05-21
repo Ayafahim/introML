@@ -99,10 +99,106 @@ plot_multiple_decision_regions([set_1, set_2, set_4])
 ```
 
 
+### Different color grading and overlapping
+
+```python
+import numpy as np  
+import matplotlib.pyplot as plt  
+  
+def calculate_distance(X, Y, point, distance_type):  
+    """  
+    Calculate the distance based on the specified distance type.  
+    Parameters:    X, Y: Meshgrid arrays.    point: Tuple (x, y) representing the point to calculate the distance from.    distance_type (str): Type of distance metric ('euclidean', 'manhattan', 'chebyshev', or 'abs').  
+    Returns:    Distance array.    """    if distance_type == 'euclidean':  
+        return np.sqrt((X - point[0]) ** 2 + (Y - point[1]) ** 2)  
+    elif distance_type == 'manhattan' or distance_type == 'abs':  
+        return np.abs(X - point[0]) + np.abs(Y - point[1])  
+    elif distance_type == 'chebyshev':  
+        return np.maximum(np.abs(X - point[0]), np.abs(Y - point[1]))  
+    else:  
+        raise ValueError("Unsupported distance type. Choose 'euclidean', 'manhattan', 'chebyshev', or 'abs'.")  
+  
+def plot_decision_region(ax, distance_types, points, thresholds, grid_size=400):  
+    """  
+    Plots decision regions based on specified distance metrics, points, and thresholds on a given axis.  
+    Parameters:    ax: Matplotlib axis to plot on.    distance_types (tuple): Distance types for each region.    points (tuple): Points for each region.    thresholds (tuple): Thresholds for each region.    grid_size (int): Number of points in the grid.    """    num_classes = len(points)  
+  
+    # Create the grid  
+    x = np.linspace(0, 6, grid_size)  
+    y = np.linspace(0, 6, grid_size)  
+    X, Y = np.meshgrid(x, y)  
+  
+    # Create a combined array to represent regions  
+    combined_regions = np.zeros_like(X, dtype=int)  
+  
+    # Calculate the distance for each region and fill the combined array  
+    for i in range(num_classes):  
+        region = calculate_distance(X, Y, points[i], distance_types[i]) < thresholds[i]  
+        combined_regions[region] = i + 1  
+  
+    # Define colormap with the number of classes  
+    cmap = plt.get_cmap('tab10', num_classes)  
+  
+    # Plot the background colors  
+    ax.contourf(X, Y, combined_regions, levels=np.arange(num_classes + 1) - 0.5, cmap=cmap, alpha=0.3)  
+  
+    # Plot contour lines  
+    ax.contour(X, Y, combined_regions, levels=np.arange(num_classes + 1) - 0.5, colors='k', linewidths=1)  
+  
+    ax.set_xlim(0, 6)  
+    ax.set_ylim(0, 6)  
+    ax.set_xlabel('x1')  
+    ax.set_ylabel('x2')  
+    ax.grid(True)  
+  
+def plot_multiple_decision_regions(list_of_sets, grid_size=400):  
+    """  
+    Plots multiple sets of decision regions side by side for comparison.  
+    Parameters:    list_of_sets (list): List of tuples where each tuple contains distance_types, points, and thresholds.    grid_size (int): Number of points in the grid.    """    num_plots = len(list_of_sets)  
+    fig, axs = plt.subplots(1, num_plots, figsize=(5 * num_plots, 5))  
+  
+    for idx, (distance_types, points, thresholds) in enumerate(list_of_sets):  
+        plot_decision_region(axs[idx], distance_types, points, thresholds, grid_size)  
+        axs[idx].set_title(f"Plot {idx+1}")  
+  
+    plt.tight_layout()  
+    plt.show()  
+  
+# Define your sets of rules  
+set_1 = (  
+    ('manhattan', 'euclidean', 'euclidean'),  
+    ((2, 4), (6, 0), (4, 2)),  
+    (2, 3, 2)  
+)  
+  
+set_2 = (  
+    ('manhattan', 'euclidean', 'euclidean'),  
+    ((2, 4), (4, 2), (6, 0)),  
+    (2, 2, 3)  
+)  
+  
+set_3 = (  
+    ('euclidean', 'euclidean', 'manhattan'),  
+    ((4, 2), (6, 0), (2, 4)),  
+    (2, 3, 2)  
+)  
+  
+# Plot the sets side by side  
+plot_multiple_decision_regions([set_1, set_2, set_3])  
+  
+# To add more sets, simply include them in the list passed to plot_multiple_decision_regions  
+# For example:  
+# set_4 = (distance_types_4, points_4, thresholds_4)  
+# plot_multiple_decision_regions([set_1, set_2, set_3, set_4])
+
+```
+
+
+
 ## classify the point, pick any random point and classify it
 
 example for S19, Q21
-
+Remember to try diffferent points!!!
 ![[Pasted image 20240521143859.png]]
 
 ![[Pasted image 20240521143904.png]]

@@ -1,11 +1,6 @@
 
 ## F23, Q21)
 
-
-
-
-
-### Question 21
 Consider the synthetic 1D dataset with four training observations:
 
 \[ X = \{-3, -1, 5, 6\} \]
@@ -155,3 +150,83 @@ for x_test in test_observations:
         print(f"The observation at x = {x_test} is not an anomaly.")
 ```
 --- 
+## S19, Q25) Which of the curves in Figure 13 shows the LOO estimate of the generalization error E(σ)?
+
+![[Pasted image 20240521144543.png]]![[Pasted image 20240521144608.png]]
+
+## Solution 
+The dataset consists of 4 observations: $\{3.918, -6.35, -2.677, -3.003\}$.
+
+### Kernel Density Estimation (KDE):
+Kernel Density Estimation is a non-parametric way to estimate the probability density function of a random variable. The kernel width $\sigma$ (or bandwidth) controls the smoothness of the estimated density.
+
+### Leave-One-Out Cross-Validation:
+LOO cross-validation is used to estimate the performance of a model by removing one observation at a time, fitting the model on the remaining data, and then predicting the left-out observation. The process is repeated for each observation in the dataset.
+
+The average negative log-likelihood for LOO cross-validation is calculated as:
+$$
+E(\sigma) = -\frac{1}{N} \sum_{i=1}^{N} \log p_\sigma(x_i)
+$$
+where $p_\sigma(x_i)$ is the estimated density at $x_i$ when $x_i$ is left out of the density estimation.
+
+### Steps to Solve:
+1. **Calculate KDE for each observation**: For each $x_i$ in the dataset, estimate the density $p_\sigma(x_i)$ using the remaining $N-1$ observations.
+2. **Compute Negative Log-Likelihood**: Compute the negative log-likelihood for each observation and then average these values.
+
+### Example Calculation:
+We will go through the steps to calculate the KDE and negative log-likelihood for different values of $\sigma$.
+
+1. **Dataset**: $\{3.918, -6.35, -2.677, -3.003\}$
+2. **KDE Formula**:
+   $$
+   p_\sigma(x) = \frac{1}{(N-1) \sqrt{2\pi\sigma^2}} \sum_{j \neq i} \exp\left( -\frac{(x - x_j)^2}{2\sigma^2} \right)
+   $$
+
+## Script
+
+```python
+import numpy as np
+
+# Dataset
+data = np.array([3.918, -6.35, -2.677, -3.003])
+
+# Function to calculate KDE
+def kde_leave_one_out(x_i, data, sigma):
+    N = len(data)
+    kde_sum = 0
+    for x_j in data:
+        if x_j != x_i:
+            kde_sum += np.exp(-((x_i - x_j)**2) / (2 * sigma**2))
+    return kde_sum / ((N - 1) * np.sqrt(2 * np.pi * sigma**2))
+
+# Function to calculate E(sigma)
+def calculate_E_sigma(data, sigma):
+    N = len(data)
+    negative_log_likelihoods = []
+    for x_i in data:
+        p_sigma = kde_leave_one_out(x_i, data, sigma)
+        negative_log_likelihoods.append(-np.log(p_sigma))
+    return np.mean(negative_log_likelihoods)
+
+# Sigma values (example)
+sigma_values = [0.1, 0.5, 1, 2, 3]
+
+# Calculate E(sigma) for different sigma values
+E_sigma_values = [calculate_E_sigma(data, sigma) for sigma in sigma_values]
+
+# Output results
+for sigma, E_sigma in zip(sigma_values, E_sigma_values):
+    print(f"E({sigma}) = {E_sigma}")
+```
+
+### Choose plot
+Result
+```
+E(0.1) = inf
+E(0.5) = 28.776301235830914
+E(1) = 8.784582878961187
+E(2) = 4.072471660359569
+E(3) = 3.3400933289379675
+```
+so when $\sigma = 2$ $E(2) = 4.07$
+find the plot that matchs that point (2,4), it is plot 1.

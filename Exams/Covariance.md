@@ -27,3 +27,9 @@ If you look at option b you can see $cov(x_1,x_4)$ is 0.55 which doesnt match si
 It cant be option D because 0.25 is a very small covariance for $x_1,x_2$ since they are strongly correlated. And for option A we see $x_3,x_4$ are not correlated so 0.72 is too high, it should be closer to 0, therefore its option C.
 
 
+---
+## F16, Q22)
+
+![[Pasted image 20240521152851.png]]
+
+![[Pasted image 20240521152915.png]]

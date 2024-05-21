@@ -72,8 +72,17 @@ D. An observation with a low value of $x_1$ (palmitic), a low value of $x_2$ (pa
 
 ### Steps to Solve the Problem:
 
-> [!TIP]
-> Refer to the table overview of projections in [[Chapters/PCA|PCA]]
+### Table Overview 
+
+| Condition  | Coefficient Sign | Contribution to PC |
+| ---------- | ---------------- | ------------------ |
+| Low Value  | Positive         | Negative           |
+| Low Value  | Negative         | Positive           |
+| High Value | Positive         | Positive           |
+| High Value | Negative         | Negative           |
+
+
+
 
 1. **Examine the $V$ Matrix**: Look at the coefficients (entries) for each principal component (column in $V$). Positive coefficients indicate a positive correlation with the principal component and negative coefficients indicate a negative correlation.
 2. **Consider the Sign and Magnitude of Coefficients**: The magnitude tells how much influence that variable has on the principal component. The sign (+/-) indicates the direction of the influence.

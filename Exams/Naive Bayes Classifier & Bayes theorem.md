@@ -250,3 +250,13 @@ else:
   
 print(classification)
 ```
+---
+## F16, Q14) What is the probability that a person that has occurrence of nausea, i.e. x1 = 1, has inflammation of the urinary bladder, i.e. y = 1, according to this study?
+![[Pasted image 20240521151227.png]]
+
+---
+## F16, Q17) Given that a person has x1 = 1, and x2 = 1 what is the probability that the person has an inflammation of urinary bladder (y = 1) according to the Na ̈ıve Bayes classifier?
+
+![[Pasted image 20240521151538.png]]
+
+![[Pasted image 20240521151458.png]]
