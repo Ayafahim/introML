@@ -97,3 +97,58 @@ plot_multiple_decision_regions([set_1, set_2, set_4])
 # set_4 = (distance_types_4, points_4, thresholds_4)  
 # plot_multiple_decision_regions([set_1, set_2, set_3, set_4])
 ```
+
+
+## classify the point, pick any random point and classify it
+
+example for S19, Q21
+
+![[Pasted image 20240521143859.png]]
+
+![[Pasted image 20240521143904.png]]
+
+```python
+import numpy as np  
+  
+# Example classification tree based on the provided image and rules  
+# inf: np.maximum(np.abs(X - point[0]), np.abs(Y - point[1]))  
+# 1-norm: np.abs(X - point[0]) + np.abs(Y - point[1])  
+# 2-norm: np.sqrt((X - point[0]) ** 2 + (Y - point[1]) ** 2)  
+  
+classification_tree = {  
+    'A': {  
+        'condition': lambda x: np.abs(x[0] - 2) + np.abs(x[1] - 4) < 2,  # L1 norm for node A  
+        'false': {  
+            'B': {  
+                'condition': lambda x: np.linalg.norm([x[0] - 6, x[1]], ord=2) < 3,  # L2 norm for node B  
+                'true': 'Class 3',  
+                'false': 'Class 2'  
+            }  
+        },  
+        'true': {  
+            'C': {  
+                'condition': lambda x: np.linalg.norm([x[0] - 4, x[1] - 2], ord=2) < 2,  # L2 norm for node C  
+                'true': 'Class 2',  
+                'false': 'Class 1'  
+            }  
+        }  
+    }  
+}  
+  
+def classify(tree, point):  
+    """  
+    Traverse the classification tree to classify the given point.    """    if isinstance(tree, dict):  
+        node = list(tree.keys())[0]  
+        condition = tree[node]['condition']  
+        if condition(point):  
+            return classify(tree[node]['true'], point)  
+        else:  
+            return classify(tree[node]['false'], point)  
+    else:  
+        return tree  
+  
+# Example usage of the classification function  
+example_point = [2.5, 0.5]  
+classified_class = classify(classification_tree, example_point)  
+print(f"Classified class for point {example_point}: {classified_class}")
+```
