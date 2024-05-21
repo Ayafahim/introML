@@ -55,3 +55,34 @@ Multinomial regression is a generalization of two class logistic regression to h
 ## S20, Q26) #crossvalidation 
 
 ![[Pasted image 20240521203102.png]]
+
+---
+## S22, Q11)
+Question 11 Explanation
+The ROC (Receiver Operating Characteristic) curve is a plot of the True Positive Rate (TPR) against the False Positive Rate (FPR) for different threshold values. The AUC is a single scalar value that summarizes the performance of the classifier; it represents the area under the ROC curve.
+
+Key concepts:
+
+![[Pasted image 20240521223053.png]]
+
+
+Analyzing the Statements
+We need to evaluate which of the statements about the ROC curve and AUC is true based on the provided information.
+
+Statement A: "The ROC curve shows how an increase in the accuracy results in a (monotonic) increase in true positive rate."
+
+This statement is incorrect. The ROC curve does not directly show accuracy. It plots TPR against FPR for various thresholds.
+Statement B: "A classifier having a ROC curve that passes through (0.0, 1.0) can achieve an FPR and FNR of zero on the particular dataset."
+
+This statement is incorrect. If the ROC curve passes through (0.0, 1.0), it means there is a threshold for which the classifier achieves 100% TPR and 0% FPR, but it does not guarantee zero FNR (False Negative Rate).
+Statement C: "A classifier having a ROC curve with an AUC of 0.5 implies that the FPR= 0.5 and the FNR= 0.5."
+
+This statement is incorrect. An AUC of 0.5 implies that the classifier performs no better than random guessing, but it does not mean that FPR and FNR are both 0.5.
+Statement D: "A classifier with an AUC of 0.5 implies that the ROC curve passes through (0.0, 0.0), (0.5, 0.5), and (1.0, 1.0)."
+
+This statement is correct. An AUC of 0.5 implies that the classifier performs like random guessing, and the ROC curve would be a diagonal line from (0.0, 0.0) to (1.0, 1.0), passing through (0.5, 0.5).
+Based on the analysis, the correct answer is: 𝐷
+
+
+Summary
+An ROC curve with an AUC of 0.5 implies a diagonal line from (0.0, 0.0) to (1.0, 1.0), indicating that the classifier's performance is equivalent to random guessing. This is the essence of Statement D.
