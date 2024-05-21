@@ -3,7 +3,7 @@
 
 Consider the synthetic 1D dataset with four training observations:
 
-\[ X = \{-3, -1, 5, 6\} \]
+$[ X = \{-3, -1, 5, 6\} ]$
 
 A standard kernel density estimator (KDE) with $\sigma^2 = 0.5$ is used to determine if test observations are anomalous based on their estimated densities. An observation will be flagged as an anomaly if $p(x) < 0.015$. We test two new observations located at $x = -4$ and $x = 2$.
 
@@ -230,3 +230,7 @@ E(3) = 3.3400933289379675
 ```
 so when $\sigma = 2$ $E(2) = 4.07$
 find the plot that matchs that point (2,4), it is plot 1.
+
+---
+## S23, Q27) Determine which value of λ in Figure 15 results in  $L = [−2.3 −2.3 −13.91]$.
+

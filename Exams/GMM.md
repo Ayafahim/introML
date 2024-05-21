@@ -113,3 +113,143 @@ probability_cluster_2 = weighted_densities[1] / sum(weighted_densities)
 
 print("Probability of O8 belonging to cluster 2:", probability_cluster_2)
 ```
+
+---
+## S23, Q25) Determine which one of the following options corresponds to the first principal component direction, v1, and the second principal component direction, v2, of the dataset modeled by p(x). !!!(This is wrong idk, dont look at it)!!!
+
+![[Pasted image 20240521190044.png]]
+
+###  Breakdown
+
+The problem involves determining the first and second principal component directions ($v_1$ and $v_2$) for a dataset modeled by a Gaussian Mixture Model (GMM) with $K = 3$ components. The GMM is defined as:
+
+$$
+p(x) = \sum_{k=1}^{3} w_k N(x | \mu_k, \Sigma_k)
+$$
+
+The given weights and covariance matrices are:
+
+- $w_1 = 0.5$, $\Sigma_1 = \begin{bmatrix} 1.1 & 2.0 \\ 2.0 & 5.5 \end{bmatrix}$
+- $w_2 = 0.49$, $\Sigma_2 = \begin{bmatrix} 1.1 & 0.0 \\ 0.0 & 5.5 \end{bmatrix}$
+- $w_3 = 0.01$, $\Sigma_3 = \begin{bmatrix} 1.5 & 0.0 \\ 0.0 & 1.5 \end{bmatrix}$
+
+### Steps to Determine the Principal Components:
+
+1. **Identify Dominant Components**:
+   - The weights $w_1$ and $w_2$ are significantly larger than $w_3$, so the principal components will be primarily influenced by $\Sigma_1$ and $\Sigma_2$.
+
+2. **Analyze Covariance Matrices**:
+   - $\Sigma_1$ and $\Sigma_2$ influence the directions of the principal components.
+
+3. **Principal Component Analysis (PCA)**:
+   - For each covariance matrix, perform eigen decomposition to find the eigenvectors (principal components) and eigenvalues.
+
+### Detailed Calculation:
+
+#### Script Result
+```
+Eigenvalues of Sigma1: [0.32678625 6.27321375]
+Eigenvectors of Sigma1:
+ [[-0.93272184 -0.36059668]
+ [ 0.36059668 -0.93272184]]
+Eigenvalues of Sigma2: [1.1 5.5]
+Eigenvectors of Sigma2:
+ [[1. 0.]
+ [0. 1.]]
+Eigenvalues of Sigma3: [1.5 1.5]
+Eigenvectors of Sigma3:
+ [[1. 0.]
+ [0. 1.]]
+First principal component direction (v1): [-0.36059668 -0.93272184]
+Second principal component direction (v2): [0. 1.]
+```
+
+
+#### Covariance Matrix $\Sigma_1$:
+
+$$
+\Sigma_1 = \begin{bmatrix} 1.1 & 2.0 \\ 2.0 & 5.5 \end{bmatrix}
+$$
+
+1. **Eigenvalues and Eigenvectors**:
+   - Compute eigenvalues ($\lambda$) and eigenvectors ($v$) of $\Sigma_1$.
+
+$$
+\text{det}(\Sigma_1 - \lambda I) = 0
+$$
+
+   Solving the characteristic equation gives:
+
+$$
+\lambda_1 = 6.397
+$$
+$$
+\lambda_2 = 0.203
+$$
+
+   Corresponding eigenvectors:
+
+$$
+v_1 = \begin{bmatrix} 0.34 \\ 0.94 \end{bmatrix}
+$$
+$$
+v_2 = \begin{bmatrix} -0.94 \\ 0.34 \end{bmatrix}
+$$
+
+#### Covariance Matrix $\Sigma_2$:
+
+$$
+\Sigma_2 = \begin{bmatrix} 1.1 & 0.0 \\ 0.0 & 5.5 \end{bmatrix}
+$$
+
+1. **Eigenvalues and Eigenvectors**:
+   - Compute eigenvalues ($\lambda$) and eigenvectors ($v$) of $\Sigma_2$.
+
+$$
+\lambda_1 = 5.5
+$$
+$$
+\lambda_2 = 1.1
+$$
+
+   Corresponding eigenvectors:
+
+$$
+v_1 = \begin{bmatrix} 0 \\ 1 \end{bmatrix}
+$$
+$$
+v_2 = \begin{bmatrix} 1 \\ 0 \end{bmatrix}
+$$
+
+
+
+
+Given the weights of the components, $𝑤_1=0.5$, $𝑤_2=0.49$ , $𝑤_3=0.01$, the principal components will be heavily influenced by $Σ_1$ and $Σ_2$.
+
+
+
+
+Since the weights for $\Sigma_1$ and $\Sigma_2$ are dominant, the principal component directions for the dataset modeled by $p(x)$ will be influenced more by these matrices.
+
+- For $Σ_1$
+	- Largest eigenvalue: 6.27321375, so corresponding eigenvector: $[−0.36059668,−0.93272184]$
+- For $Σ_2$
+	- Largest eigenvalue: 5.5, so corresponding eigenvector: $[0,1]$
+
+
+The principal component directions should approximately be:
+
+$$
+v_1 \approx \begin{bmatrix} 0.7 \\ 0.7 \end{bmatrix}
+$$
+$$
+v_2 \approx \begin{bmatrix} 0.7 \\ -0.7 \end{bmatrix}
+$$
+
+### Conclusion:
+
+The correct option for the principal component directions is:
+
+$$
+\boxed{C. v_1 \approx \begin{bmatrix} 0.7 \\ -0.7 \end{bmatrix}, v_2 \approx \begin{bmatrix} 0.7 \\ 0.7 \end{bmatrix}}
+$$
