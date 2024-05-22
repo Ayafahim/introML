@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/PCA Problems.md",
+                "file": "Chapters/Covariance Matrix.md",
                 "mode": "preview",
                 "source": false
               }
@@ -101,8 +101,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -122,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/PCA Problems.md",
+                "file": "Chapters/Covariance Matrix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/PCA Problems.md",
+                "file": "Chapters/Covariance Matrix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/PCA Problems.md"
+                "file": "Chapters/Covariance Matrix.md"
               }
             }
           }
@@ -185,8 +184,11 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
-    "Chapters/PCA.md",
+    "Exams/S16.md",
     "Exams/Covariance.md",
+    "Exams/KDE.md",
+    "Exams/PCA Problems.md",
+    "Chapters/PCA.md",
     "Readme.md",
     "images/Pasted image 20240521203102.png",
     "Exams/Confusion Matrix.md",
@@ -211,8 +213,6 @@
     "images/Pasted image 20240521201646.png",
     "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "images/Pasted image 20240521200828.png",
-    "Exams/PCA Problems.md",
-    "Exams/KDE.md",
     "Exams/Forward - backwards selection.md",
     "Exams/GMM.md",
     "[.md",
@@ -220,7 +220,6 @@
     "Exams/Market basket Problem.md",
     "Exams/ANN.md",
     "Exams/Regression model.md",
-    "Exams/Logistic Regression.md",
     "Chapters",
     "Exams",
     "images",
