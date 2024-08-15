@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "mode": "preview",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md",
+                "file": "Chapters/Data and Attribute Types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exams/Naive Bayes Classifier & Bayes theorem.md"
+                "file": "Chapters/Data and Attribute Types.md"
               }
             }
           }
@@ -184,6 +184,7 @@
   },
   "active": "9d668db7d31f2f34",
   "lastOpenFiles": [
+    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Chapters/PCA.md",
     "Exams/Covariance.md",
     "Exams/Density function.md",
@@ -194,7 +195,6 @@
     "Exams/PCA Problems.md",
     "Exams/KDE.md",
     "Exams/GMM.md",
-    "Exams/Naive Bayes Classifier & Bayes theorem.md",
     "Exams/KNN.md",
     "Exams/Jaccard, SMC etc..md",
     "Exams/Mahanolobis Distance.md",
